@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    content
+\*------------------------------------*/
+/**
+ * Content : zones de contenus
+ * 
+ */
+
+.content {
+	@extend .right;
+	
+	position: relative;
+	width: 640px;
+}

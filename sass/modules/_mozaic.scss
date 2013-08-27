@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    mozaic
+\*------------------------------------*/
+/**
+ * Mozaic : Type de mise en page pour plusieurs visuels
+ */
+
+/**
+ * Mozaic
+ */
+.mozaic {
+
+}
+
+
+/**
+ * Mozaix pour Le Mestre
+ * 
+ * 
+ */
+.mozaic--lm {
+
+	position: relative; 
+	height: 300px;
+	width: 100%;
+
+	ul {
+		height: 300px;
+		position: absolute;
+		top: 0;
+		right: 0;  
+		text-align: right;
+		width: 3000px;
+		
+		li {
+			display: inline;
+		}
+	}
+
+
+}
+    

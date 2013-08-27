@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    main
+\*------------------------------------*/
+/**
+ * Main : zone principale de la page. 
+ * La sidebar peut-être considéré à l'intérieur si besoin
+ * 
+ */
+
+.main {
+	@extend .w50;
+	@extend .left;
+	
+	position: relative;
+	left: 157px; 
+	// margin-left: 157px;
+	
+}

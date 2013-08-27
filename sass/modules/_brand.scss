@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    brand
+\*------------------------------------*/
+/**
+ * Brand : pour la mise en page du logo
+ * 
+ */
+
+.brand {
+	img {
+		max-width: 100%; 
+	}
+}
+
+/*
+ * Knacss
+ * brand--w30-left
+ * 
+ */
+.brand--lm {
+    @extend .w30;
+	@extend .left;
+	
+	margin: 20px 0;
+}

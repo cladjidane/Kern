@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    header
+\*------------------------------------*/
+/**
+ * Header : zones d'entête
+ * 
+ */
+
+.header {
+	@extend .w960p;
+	@extend .item;
+	@extend .center;
+}

@@ -1,0 +1,81 @@
+/*------------------------------------*\
+    contact
+\*------------------------------------*/
+/**
+ * Contact : mise en form des zones de contacts
+ * Form /texte
+ * 
+ */
+
+.contact {
+	padding: 20px 0 10px 30px;
+	width: 320px; 
+}
+
+.contact-txt {
+	@include text-shadow(rgba(white, 0.9) 1px 1px 0);
+	@extend .contact;
+
+	background: $yellow; 
+	color: $gray-txt;
+	height: 300px; 
+	
+	> h2 {
+		@extend .h2-like;
+		
+		margin: 0;
+		line-height: 55px;  
+	}
+
+	> ul {
+		list-style: none; 
+		margin: 0;
+		padding: 0; 
+		
+		li {
+			@include box-shadow($gray-neutral 0 -1px 0);
+		
+			border-top: 1px solid $gray-bold;
+			padding: 15px 0; 
+			padding-left: 40px; 			
+			margin-top: 1px; 
+			
+			&:first-child {		
+				$icons: sprite-map("icons/*.png");
+				background-position: sprite-position($icons, marker, 0, 10px);
+			}
+		} 
+	}
+	
+	
+}
+
+.contact-form {
+	@include text-shadow(rgba($gray-txt, 0.9) 1px 1px 0);
+	@extend .contact;
+	
+	background: $gray; 
+	color: white;
+
+	> h3 {
+		@extend .h2-like;
+		margin-bottom: 10px; 
+	}
+
+	input {
+		width: 100%; 
+	}
+
+	textarea {
+		width: 100%; 
+	} 
+
+	button {
+		@include box-shadow($gray 0 -1px 0);
+		
+		background: #b4b8ca; 
+		border: none;
+		margin-top: 10px; 
+		padding: 10px 20px; 
+	}
+}

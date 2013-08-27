@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    kern.scss
+\*------------------------------------*/
+/**
+ * Kern est un framework maison développé pour 
+ * être réutilisable d'un projet à l'autre.
+ *
+ * Kern est construit selon la syntaxe BEM
+ * http://bem.info/ 
+ * et intègre le coeur de Knacss
+ * http://knacss.com/
+ * 
+ */
+
+
+
+/*------------------------------------*\
+    import
+\*------------------------------------*/
+
+/**
+ * Base
+ */
+@import "compass";
+@import "base";
+
+/**
+ * Tiers
+ */
+@import "knacss/knacss.scss"; 
+
+/**
+ * Kern - Areas
+ */
+@import "areas/body";
+@import "areas/header";
+@import "areas/main";
+@import "areas/content";
+@import "areas/article"; 
+@import "areas/aside"; 
+@import "areas/sidebar";
+@import "areas/footer";
+
+/**
+ * Kern - Modules
+ */
+@import "modules/skipmenu";
+@import "modules/brand";
+@import "modules/nav";
+@import "modules/mozaic";
+@import "modules/contact";
+@import "modules/copyright";
+@import "modules/libt";
+@import "modules/alaune";
+@import "modules/headings";
+@import "modules/article";

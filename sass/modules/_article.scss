@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    article
+\*------------------------------------*/
+/**
+ * Article : mise en form d'un article
+ * Avec ses composant
+ * 	- Titre
+ * 	- Champeau
+ *  - Sous-titre
+ *  - ...
+ */
+
+
+.article {
+
+	padding: 30px 20px 50px 0; 
+	
+	a {
+		color: $red;
+		text-decoration: none; 
+	}
+
+	.article__header {
+		h1 {
+			line-height: 60px; 
+			text-transform: uppercase ;
+		}	
+	}
+
+	.article__chapo {
+		color: $red; 
+		font-weight: bold;
+		padding-bottom: 20px;
+		margin-bottom: 20px;  
+		border-bottom: 1px solid lighten($gray, 50); 
+	}
+}

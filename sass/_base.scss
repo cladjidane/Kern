@@ -1,0 +1,98 @@
+/*------------------------------------*\
+    base
+\*------------------------------------*/
+/**
+ * Base : Définition des variables et autres déclarations
+ * utiles au projet en cours
+ * 
+ */
+
+
+/* Color */
+
+$gray : #3d4252;
+$gray-light : #f8f8f8;
+$gray-bold: #ededed;
+$gray-neutral: #bcbcbc;
+
+
+$gray-txt : #3d4252;
+
+$red : #cd1626;
+
+$yellow : #f6ec16;
+
+$icons-spacing: 20px;
+$icons-new-spacing: 20px;
+
+/* Fonts */
+// @include font-face("geddes", font-files("Geddes/geddes-webfont.ttf"));
+// @include font-face("cabin", font-files("Cabin_Condensed/CabinCondensed-Regular.ttf"));
+// @include font-face("molengo", font-files("Molengo/Molengo-Regular.ttf")); /* 2 */
+// @include font-face("montserrat", font-files("Montserrat/Montserrat-Regular.ttf"));
+// @include font-face("questrial", font-files("Questrial/Questrial-Regular.ttf")); /* 1 */
+// @include font-face("raleway", font-files("Raleway/Raleway-Regular.ttf"));
+@include font-face("telex", font-files("Telex/Telex-Regular.ttf")); /* 3 */
+
+$font : "telex";
+$basefont 	: 15;
+$h1 		: 42;
+$h2 		: 24;
+$h3 		: 18;
+$h4 		: 16;
+$h5 		: 12;
+$h6 		: 12;
+
+/* alternate font-sizing */
+$smaller 	: 10;
+$small 		: 12;
+$medium 	: 14;
+$big 		: 16;
+$bigger 	: 18;
+$biggest 	: 20;
+
+/* sprite */
+@import "icons/*.png";
+@include all-icons-sprites; 
+
+$icons-spacing : 20px; 
+$icons: sprite-map("icons/*.png", $spacing: $icons-spacing);
+
+
+/* Utilz */
+@mixin size-box ($w, $h) {
+	width: $w;
+	height: $h;
+}
+
+
+@mixin link-menus ($size) {
+	color: $gray-txt; 
+	text-decoration: none;
+	@include rem($size);
+}
+
+/*
+@mixin border ($color : none, $size : 0, $side : none) {
+	@if $side != none { 
+		border: {
+	    style: solid;
+	    {$side}: {
+	      width: $size;
+	      color: $color; 
+	    }
+    }
+  }
+}
+*/
+hr {
+	clear: both;
+	margin: 20px 0; 
+	height: 1px;
+	padding: 0;
+	color: $gray;
+	background-color: $gray;
+	border: 0;
+}
+
+ 
