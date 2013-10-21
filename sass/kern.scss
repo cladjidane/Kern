@@ -27,7 +27,17 @@
 /**
  * Tiers
  */
-@import "knacss/knacss.scss"; 
+//@import "knacss/knacss.scss"; 
+
+/**
+ * Kern - Generic
+ */
+@import "generic/clearfix";
+@import "generic/debug";
+@import "generic/mixins";
+@import "generic/helper";
+@import "generic/normalize";
+//@import "generic/reset";
 
 /**
  * Kern - Areas
@@ -54,3 +64,8 @@
 @import "modules/alaune";
 @import "modules/headings";
 @import "modules/article";
+
+/**
+ * Kern - Guidelines (sg)
+ */
+@import "sg";

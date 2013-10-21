@@ -9,33 +9,27 @@
 
 
 /* Color */
-
-$gray : #3d4252;
-$gray-light : #f8f8f8;
-$gray-bold: #ededed;
-$gray-neutral: #bcbcbc;
-
-
-$gray-txt : #3d4252;
-
-$red : #cd1626;
-
-$yellow : #f6ec16;
-
-$icons-spacing: 20px;
-$icons-new-spacing: 20px;
+$color-a : #96ca2d;
+$color-b : #4bb5c1;
+$color-c : #e4dfc1;
+$color-d : #a00d58;
+$color-e : #bba276;
+$color-f : #edf7f2;
+$color-g : #edf7f2;
+$color-h : #edf7f2;
 
 /* Fonts */
-// @include font-face("geddes", font-files("Geddes/geddes-webfont.ttf"));
-// @include font-face("cabin", font-files("Cabin_Condensed/CabinCondensed-Regular.ttf"));
-// @include font-face("molengo", font-files("Molengo/Molengo-Regular.ttf")); /* 2 */
-// @include font-face("montserrat", font-files("Montserrat/Montserrat-Regular.ttf"));
-// @include font-face("questrial", font-files("Questrial/Questrial-Regular.ttf")); /* 1 */
-// @include font-face("raleway", font-files("Raleway/Raleway-Regular.ttf"));
-@include font-face("telex", font-files("Telex/Telex-Regular.ttf")); /* 3 */
+@include font-face("telex", font-files("Telex/Telex-Regular.ttf")); 
 
-$font : "telex";
-$basefont 	: 15;
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+$base-font-family:  sans-serif!default;
+$base-ui-color:     #ccc!default;
+
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
 $h1 		: 42;
 $h2 		: 24;
 $h3 		: 18;
@@ -51,6 +45,7 @@ $big 		: 16;
 $bigger 	: 18;
 $biggest 	: 20;
 
+
 /* sprite */
 @import "icons/*.png";
 @include all-icons-sprites; 
@@ -59,40 +54,13 @@ $icons-spacing : 20px;
 $icons: sprite-map("icons/*.png", $spacing: $icons-spacing);
 
 
-/* Utilz */
-@mixin size-box ($w, $h) {
-	width: $w;
-	height: $h;
-}
+/* debug */
+$debug-mode: false!default;
 
+/* Responsive */
+$responsive: true!default;
 
-@mixin link-menus ($size) {
-	color: $gray-txt; 
-	text-decoration: none;
-	@include rem($size);
-}
-
-/*
-@mixin border ($color : none, $size : 0, $side : none) {
-	@if $side != none { 
-		border: {
-	    style: solid;
-	    {$side}: {
-	      width: $size;
-	      color: $color; 
-	    }
-    }
-  }
-}
-*/
-hr {
-	clear: both;
-	margin: 20px 0; 
-	height: 1px;
-	padding: 0;
-	color: $gray;
-	background-color: $gray;
-	border: 0;
-}
-
+$lap-start:         481px!default; /* breakpoint */
+$desk-start:        1024px!default;
+$desk-wide-start:   1200px!default;
  

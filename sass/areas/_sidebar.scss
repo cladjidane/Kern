@@ -7,19 +7,5 @@
  */
 
 .sidebar {
-	@extend .w50;
-	@extend .right;
-	
-	// margin-right: -157px;
-	height: 100%; 
-	position: relative;
-	right: -157px;
-}
 
-.parent-sidebar1 {
-	background: $yellow;
-}
-
-.parent-sidebar2 {
-	background: $gray; 
 }

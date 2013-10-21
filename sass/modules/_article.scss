@@ -16,7 +16,6 @@
 	padding: 30px 20px 50px 0; 
 	
 	a {
-		color: $red;
 		text-decoration: none; 
 	}
 
@@ -28,10 +27,8 @@
 	}
 
 	.article__chapo {
-		color: $red; 
 		font-weight: bold;
 		padding-bottom: 20px;
 		margin-bottom: 20px;  
-		border-bottom: 1px solid lighten($gray, 50); 
 	}
 }

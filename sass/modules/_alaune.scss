@@ -34,9 +34,8 @@
 	.alaune__info {
 		@include size-box(50px, 50px); 
 		@include border-radius(50px);
-		@include rem(12);
+		@include font-size(12px);
 		
-		background: $red;
 		color: white;
 		text-align: center;
 		line-height: 14px;
@@ -44,7 +43,7 @@
 		margin: 21px; 
 		
 		span {
-			@include rem(20);
+			@include font-size(20px);
 			display: block;
 			font-weight: bold; 
 			width: 100%; 	
@@ -53,7 +52,7 @@
 
 	.alaune__title {
 			
-		@include rem(14);
+		@include font-size(14px);
 
 		color: white;
 		display: block;
@@ -61,7 +60,7 @@
 		margin-top: 30px; 
 		
 		.alaune__title--big {
-			@include rem(22);
+			@include font-size(22px);
 			display: block;
 
 			&::before {

@@ -7,47 +7,27 @@
  */
 
 .footer {
-	@extend .clearfix;
-	@include box-shadow(lighten($gray, 50) 0 -1px 0);
-	
-	background: $gray-bold; 
 	
 	section {
 		float: right;
 		margin: 10px 20px 60px 0; 
 		
 		h3 {
-			@include rem(16);
-						
-			color: darken($gray-txt, 10); 
+			@include font-size(16px);
+
 			line-height: 38px; 
 			margin-bottom: 15px; 
 		}
 	}
 
 	.footer-l {	
-		@extend .w50;
-		@extend .left;
-		
-		height: 100%; 
 		position: relative;
-		right: -157px;
 	}
 
 	.footer-r {	
-		@extend .w50;
-		@extend .left;
-		@include box-shadow(darken($gray, 5) 0 -1px 0);
-		
-		background: $gray; 
-		border-top: 1px solid lighten($gray,10);  
-		height: 180px; 
 		position: relative;
-		right: -157px;
 		
-		p {
-			@include rem($small);
-			
+		p {			
 			margin: 20px;
 		}		
 
