@@ -1311,6 +1311,17 @@ html {
  * Body : Corps de la page
  * 
  */
+/* line 13, ../sass/areas/_body.scss */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* line 17, ../sass/areas/_body.scss */
+.container > section {
+  background: silver;
+  margin-bottom: 20px;
+}
+
 /*------------------------------------*\
     header
 \*------------------------------------*/

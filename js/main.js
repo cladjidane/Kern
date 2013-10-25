@@ -47,6 +47,7 @@ $(document).ready(function() {
 	feature.showItemByIndex(20);
 	*/
 
+	/*
 	var mozaic = (function(){
 
 		var	$ul = $('.mozaic-pagination'),
@@ -120,7 +121,9 @@ $(document).ready(function() {
 			init: init()
 		}		
 	})();
+	*/
 
+	$('.gamme').mozaic();
 
 	$('.slider-recette').bxSlider({
 		slideWidth: 78,

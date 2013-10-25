@@ -17,21 +17,26 @@
 	</head>
 	<body>
 
-		<header>
-			<h1>
+		<header class="grid">
+			<h1 class="grid__item one-eighth">
 				BIOBREIZH
-			</h1>
+			</h1><!--
 
-			<nav>
-
+			--><nav class="grid__item seven-eighths">
+		    <ul class="nav nav-mainmenu">
+			    <li class="nav-mainmenu__item"><a href="#">Accueil</a></li>
+			    <li class="nav-mainmenu__item"><a href="#">Le groupement</a></li>
+			    <li class="nav-mainmenu__item"><a href="#">Les produits</a></li>
+			    <li class="nav-mainmenu__item"><a href="#">Contact</a></li>
+			  </ul>
 			</nav>
 		</header>
 
-		<div class="grid">
+		<div class="container">
 			
 			<!-- PRODUITS -->
-			<section>
-				<aside class="grid__item desk--one-third  aside-infos aside-infos--bx">
+			<section class="grid">
+				<aside class="grid__item one-third  aside-infos aside-infos--bx">
 					<h2 class="aside-infos__title">Acualités BIO</h2>
 
 					<ul class="bxslider slider-recette">
@@ -44,17 +49,17 @@
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
 					<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
-				</aside>
+				</aside><!--
 
-				<article class="grid__item desk--one-third  article">
+				--><article class="grid__item one-third  article">
 					<header class="article__header">
 						<h1>Hello World</h1>
 					</header>
 
 					<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</article>
+				</article><!--
 
-				<div class="grid__item desk--one-third  mozaic">
+				--><div class="grid__item one-third  mozaic gamme">
 					<ul class="mozaic__layout mozaic-pagination">
 						<li class="mozaic__item">
 							<a href="">
@@ -128,153 +133,237 @@
 
 			</section>
 			
-			<!-- ACCUEIL -->
-			<section></section>
+			<!-- ACCUEIL -->			
+			<section class="grid">
+				<aside class="grid__item one-third  aside-infos aside-infos--bx">
+					<h2 class="aside-infos__title">Acualités BIO</h2>
+
+					<ul class="bxslider slider-recette">
+					  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					</ul>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
+					<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
+				</aside><!--
+
+				--><article class="grid__item one-third  article">
+					<header class="article__header">
+						<h1>Hello World</h1>
+					</header>
+
+					<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</article><!--
+
+				--><div class="grid__item one-third  mozaic">
+					<ul class="mozaic__layout mozaic-pagination">
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</section>
 			
 			<!-- LE GROUPEMENT -->
-			<section></section>
+			<section class="grid">
+				<aside class="grid__item one-third  aside-infos aside-infos--bx">
+					<h2 class="aside-infos__title">Acualités BIO</h2>
+
+					<ul class="bxslider slider-recette">
+					  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					</ul>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
+					<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
+				</aside><!--
+
+				--><article class="grid__item one-third  article">
+					<header class="article__header">
+						<h1>Hello World</h1>
+					</header>
+
+					<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</article><!--
+
+				--><div class="grid__item one-third  mozaic">
+					<ul class="mozaic__layout mozaic-pagination">
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/th-poder.png" alt="">
+								<div class="mozaic__item-desc"><span>texte</span></div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</section>
 			
 			<!-- CONTACT -->
-			<section></section>
-		</div>
+			<section class="grid">
+				<aside class="grid__item one-third  aside-infos aside-infos--bx">
+					<h2 class="aside-infos__title">Acualités BIO</h2>
 
-
-		
-		<div class="skipmenu">
-			<ul class="visuallyhidden">
-				<li><a href="">dqsdsq</a></li>
-				<li><a href="">dqsd</a></li>
-				<li><a href="">qdqs</a></li>
-			</ul>
-		</div>
-
-		<header role="banner" class="header">
-			<a href="" class="brand brand--lm">
-				<img src="img/logo.png" alt="">
-			</a>
-			<nav class="nav nav--lm">
-				<ul>
-					<li><a href="">Accueil</a></li>
-					<li><a href="">L'entreprise</a></li>
-					<li><a href="">Courverture</a></li>
-					<li><a href="">Bardage</a></li>
-					<li><a href="">Etanchéité</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<div class="line">
-			<div class="main">
-				<div role="content" class="content">
-					<section class="mozaic mozaic--lm">
-						<ul class="slider-recette">
-							<li>
-								<img src="http://lorempixel.com/480/300" alt="">
-							</li>
-							<li>
-								<img src="http://lorempixel.com/480/300" alt="">
-							</li>
-							<li>
-								<img src="http://lorempixel.com/480/300" alt="">
-							</li>
-							<li>
-								<img src="http://lorempixel.com/480/300" alt="">
-							</li>
-							<li>
-								<img src="http://lorempixel.com/480/300" alt="">
-							</li>
-							<li>
-								<img src="http://lorempixel.com/480/300" alt="">
-							</li>
-						</ul>
-					</section>
-
-					<ol class="nav  breadcrumb">
-					    <li><a href="#">Home</a></li>
-					    <li><a href="#">About</a></li>
-					    <li><a href="#">The Board</a></li>
-					    <li class="current"><a href="#">Directors</a></li>
-					</ol>
-
-					<article class="article article--lm">
-						<header class="article__header">
-							<h1>Le bardage</h1>
-						</header>
-						<p class="article__chapo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, fugit perspiciatis a quibusdam delectus earum vero ullam consequatur numquam iure distinctio ipsa velit in deleniti id qui ratione dolorum odit.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, consectetur, voluptatibus, atque, pariatur amet at voluptatum veritatis aliquid fugiat itaque facere eius doloribus ipsum. Tempore nihil aliquid magnam ab eaque?</p>
-						<p>Repudiandae, quidem, neque natus sint magnam laborum optio quos odit tempore consequatur in modi esse porro veniam aperiam iusto eum dignissimos et rerum aut enim a corrupti! Mollitia, harum, corporis!</p>
-						<p>Et, <a href="">maiores, nemo odio totam facere</a>maiores, nemo odio totam facere eveniet deserunt reprehenderit vel ad ratione aut vero doloribus ducimus labore excepturi accusantium obcaecati omnis deleniti autem libero minus temporibus impedit accusamus asperiores minima.</p>
-						<p>Dolor, voluptatum, animi, adipisci fugiat tempora ab deleniti accusantium consequuntur sed eaque alias error aspernatur obcaecati ad tempore nesciunt amet inventore neque repellat odit dicta reprehenderit expedita explicabo veritatis beatae.</p>
-						<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Saepe, consectetur, voluptatibus, atque, pariatur amet at voluptatum veritatis aliquid fugiat itaque facere eius doloribus ipsum. Tempore nihil aliquid magnam ab eaque?</p>
-						<p>Repudiandae, quidem, neque natus sint magnam laborum optio quos odit tempore consequatur in modi esse porro veniam aperiam iusto eum dignissimos et rerum aut enim a corrupti! Mollitia, harum, corporis!</p>
-						<p>Et, maiores, nemo odio totam facere eveniet deserunt reprehenderit vel ad ratione aut vero doloribus ducimus labore excepturi accusantium obcaecati omnis deleniti autem libero minus temporibus impedit accusamus asperiores minima.</p>
-						<p>Dolor, voluptatum, animi, adipisci fugiat tempora ab deleniti accusantium consequuntur sed eaque alias error aspernatur obcaecati ad tempore nesciunt amet inventore neque repellat odit dicta reprehenderit expedita explicabo veritatis beatae.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, consectetur, voluptatibus, atque, pariatur amet at voluptatum veritatis aliquid fugiat itaque facere eius doloribus ipsum. Tempore nihil aliquid magnam ab eaque?</p>
-						<p>Repudiandae, quidem, neque natus sint magnam laborum optio quos odit tempore consequatur in modi esse porro veniam aperiam iusto eum dignissimos et rerum aut enim a corrupti! Mollitia, harum, corporis!</p>
-						<p>Et, maiores, nemo odio totam facere eveniet deserunt reprehenderit vel ad ratione aut vero doloribus ducimus labore excepturi accusantium obcaecati omnis deleniti autem libero minus temporibus impedit accusamus asperiores minima.</p>
-						<p>Dolor, voluptatum, animi, adipisci fugiat tempora ab deleniti accusantium consequuntur sed eaque alias error aspernatur obcaecati ad tempore nesciunt amet inventore neque repellat odit dicta reprehenderit expedita explicabo veritatis beatae.</p>
-					</article>
-				</div>
-			</div>
-
-			<aside role="aside" class="sidebar">
-				<div class="parent-sidebar1">
-					<div class="contact contact-txt">
-						<h2 class="contact-txt__name">Sté Le Mestre</h2>
-						<ul>
-							<li class="contact-txt__address icons-marker">54 rue des Abers<br />Z.A. Kernilis</li>
-							<li class="contact-txt__address icons-tel">02 98 25 53 06</li>
-							<li class="contact-txt__address icons-mail">contact[]lemestre-freres.fr</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="parent-sidebar2">	
-					<div class="contact contact-form">
-						<h3 class="contact-form__title-form">Contactez-nous</h3>
-						<form action="" class="contact-form__form">
-							<input type="text" class="contact-form__input" placeholder="Votre mail" value="">
-							<textarea name="" id="" cols="30" rows="10" class="contact-form__textarea" placeholder="Votre message"></textarea>
-							<button class="contact-form__button">Envoyer</button>
-						</form>
-					</div>
-				</div>
-			</aside>
-		</div>
-
-		<footer id="footer" role="contentinfo" class="footer">
-			<div class="footer-l"> 
-				<section>
-					<h3>Le Mestre</h3>
-					<ul class="nav--v">
-						<li><a href="">dffdsfq</a></li>
-						<li><a href="">fqdsqs</a></li>
-						<li><a href="">fqdsfq</a></li>
+					<ul class="bxslider slider-recette">
+					  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+					  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
 					</ul>
-				</section>
-				<section>
-					<h3>En images</h3>
-					<ul class="nav--v">
-						<li><a href="">fdsqfqs</a></li>
-						<li><a href="">fqds</a></li>
-						<li><a href="">fdsqfsqf</a></li>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
+					<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
+				</aside><!--
+
+				--><article class="grid__item one-third  article">
+					<header class="article__header">
+						<h1>Hello World</h1>
+					</header>
+
+					<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</article><!--
+
+				--><div class="grid__item one-third  mozaic">
+				<h1>L'équipe</h1>
+					<ul class="mozaic__layout mozaic-pagination">
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/yoann-morin.png" alt="">
+								<div class="mozaic__item-desc"><span>Yoann Morin</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/tiefen-lebros.png" alt="">
+								<div class="mozaic__item-desc"><span>Tiefen lebros</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/eric-sire.png" alt="">
+								<div class="mozaic__item-desc"><span>eric-sire</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/dominique-dyupaty.png" alt="">
+								<div class="mozaic__item-desc"><span>Dominique <br />Duapaty</span></div>
+							</a>
+						</li>
+						<li class="mozaic__item">
+							<a href="">
+								<img src="img/annabelle-cras.png" alt="">
+								<div class="mozaic__item-desc"><span>Annabelle <br />cras</span></div>
+							</a>
+						</li>
 					</ul>
-				</section>
-				<section>
-					<h3>Contact</h3>
-					<ul class="nav--v">
-						<li><a href="">fds</a></li>
-						<li><a href="">qfsqdfsq</a></li>
-						<li><a href="">qfdfdsq</a></li>
-					</ul>
-				</section> 
-			</div>
-			
-			<div class="footer-r">
-				<p>lemestrefreres.fr / 2013 - Créaton La simple agence</p>
-			</div>
-		</footer>
+
+				</div>
+
+			</section>
+		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

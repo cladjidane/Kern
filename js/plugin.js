@@ -304,3 +304,125 @@ jQuery.extend( jQuery.easing,
  * @version 1.4.6
  */
 ;(function($){var h=$.scrollTo=function(a,b,c){$(window).scrollTo(a,b,c)};h.defaults={axis:'xy',duration:parseFloat($.fn.jquery)>=1.3?0:1,limit:true};h.window=function(a){return $(window)._scrollable()};$.fn._scrollable=function(){return this.map(function(){var a=this,isWin=!a.nodeName||$.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!isWin)return a;var b=(a.contentWindow||a).document||a.ownerDocument||a;return/webkit/i.test(navigator.userAgent)||b.compatMode=='BackCompat'?b.body:b.documentElement})};$.fn.scrollTo=function(e,f,g){if(typeof f=='object'){g=f;f=0}if(typeof g=='function')g={onAfter:g};if(e=='max')e=9e9;g=$.extend({},h.defaults,g);f=f||g.duration;g.queue=g.queue&&g.axis.length>1;if(g.queue)f/=2;g.offset=both(g.offset);g.over=both(g.over);return this._scrollable().each(function(){if(e==null)return;var d=this,$elem=$(d),targ=e,toff,attr={},win=$elem.is('html,body');switch(typeof targ){case'number':case'string':if(/^([+-]=?)?\d+(\.\d+)?(px|%)?$/.test(targ)){targ=both(targ);break}targ=$(targ,this);if(!targ.length)return;case'object':if(targ.is||targ.style)toff=(targ=$(targ)).offset()}$.each(g.axis.split(''),function(i,a){var b=a=='x'?'Left':'Top',pos=b.toLowerCase(),key='scroll'+b,old=d[key],max=h.max(d,a);if(toff){attr[key]=toff[pos]+(win?0:old-$elem.offset()[pos]);if(g.margin){attr[key]-=parseInt(targ.css('margin'+b))||0;attr[key]-=parseInt(targ.css('border'+b+'Width'))||0}attr[key]+=g.offset[pos]||0;if(g.over[pos])attr[key]+=targ[a=='x'?'width':'height']()*g.over[pos]}else{var c=targ[pos];attr[key]=c.slice&&c.slice(-1)=='%'?parseFloat(c)/100*max:c}if(g.limit&&/^\d+$/.test(attr[key]))attr[key]=attr[key]<=0?0:Math.min(attr[key],max);if(!i&&g.queue){if(old!=attr[key])animate(g.onAfterFirst);delete attr[key]}});animate(g.onAfter);function animate(a){$elem.animate(attr,f,g.easing,a&&function(){a.call(this,targ,g)})}}).end()};h.max=function(a,b){var c=b=='x'?'Width':'Height',scroll='scroll'+c;if(!$(a).is('html,body'))return a[scroll]-$(a)[c.toLowerCase()]();var d='client'+c,html=a.ownerDocument.documentElement,body=a.ownerDocument.body;return Math.max(html[scroll],body[scroll])-Math.min(html[d],body[d])};function both(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);
+
+/*!
+ * jQuery lightweight plugin boilerplate
+ * Original author: @ajpiano
+ * Further changes, comments: @addyosmani
+ * Licensed under the MIT license
+ */
+
+// the semi-colon before the function invocation is a safety
+// net against concatenated scripts and/or other plugins
+// that are not closed properly.
+;(function ( $, window, document, undefined ) {
+
+    // undefined is used here as the undefined global
+    // variable in ECMAScript 3 and is mutable (i.e. it can
+    // be changed by someone else). undefined isn't really
+    // being passed in so we can ensure that its value is
+    // truly undefined. In ES5, undefined can no longer be
+    // modified.
+
+    // window and document are passed through as local
+    // variables rather than as globals, because this (slightly)
+    // quickens the resolution process and can be more
+    // efficiently minified (especially when both are
+    // regularly referenced in your plugin).
+
+    // Create the defaults once
+    var pluginName = "mozaic",
+        defaults = {
+            className		: "mozaic",
+            numPerPage 	: 8,
+            numRows			: 3,
+            count 			: 1
+        };
+
+    // The actual plugin constructor
+    function Mozaic( element, options ) {
+        this.element = element;
+        this._li = $('li', element);
+        this._ul = $('ul', element);
+
+        this.options = $.extend( {}, defaults, options) ;
+
+        this._defaults = defaults;
+        this._name = pluginName;
+
+        this.init();
+    }
+
+    Mozaic.prototype = {
+
+        init: function() {
+
+          // On wrap tous les paquets de 8 li
+					for (var i = 0; i < this._li.length; i += this.options['numPerPage']) {
+						var active = i == 0 ? 'mozaic-page-active' : '';
+					  this._li.slice(i,i+this.options['numPerPage']).wrapAll('<ul class="mozaic-page mozaic-page-' + (this.options['count']++) + ' mozaic__layout ' + active + '" />');
+					}
+
+					this._ul.find('> ul').unwrap();
+
+					// TODO : à refactoriser propre
+					// On ajoute la nav
+					this.navBuild();
+
+					// On active le premier et masque les autres
+					$('.mozaic-page').height(($('.mozaic__item').eq(0).height() * 3) + 15);
+
+					// Navigation
+					$('.mozaic-next').on('click', function(e){
+
+						var $next = $(this).parent().next();
+						var $current = $(this).parent();
+						$current.removeClass('mozaic-page-active');
+						
+						if($next.length != 0) {
+							$next.addClass('mozaic-page-active');
+						} else {
+							$('.mozaic-page', this._element).eq(0).addClass('mozaic-page-active');					
+						}				
+					})
+
+					// Resize
+					$( window ).resize(function() {
+					  this.navDimension();
+					});
+        },
+
+				navBuild : function() {
+					// On construit le block pour la nav
+					$('.mozaic-page', this.element).append('<li class="mozaic-next mozaic__item"></li>').css('margin-right', 0);
+
+					// On construit le block pour l'icone et le click					
+					$('.mozaic-next', this.element).append('<div class="mozaic-next-icon icons-plus-active"></div>');
+
+					// Dimension idéal du block
+					this.navDimension();
+				},
+
+				navDimension : function() {
+					var $item = $('.mozaic__item').eq(0);
+
+					// Le block fait la même taille que les autres li
+					$('.mozaic-next')
+						.width($item.width())
+						.height($item.height());
+
+				}
+    };
+
+    // A really lightweight plugin wrapper around the constructor,
+    // preventing against multiple instantiations
+    $.fn[pluginName] = function ( options ) {
+        return this.each(function () {
+            if (!$.data(this, "plugin_" + pluginName)) {
+                $.data(this, "plugin_" + pluginName,
+                new Mozaic( this, options ));
+            }
+        });
+    };
+
+})( jQuery, window, document );
