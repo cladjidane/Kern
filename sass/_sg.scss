@@ -6,7 +6,7 @@
  * voir /_sg
  * 
  */
-
+.blocks { background: silver; }
 
 .sg-color--a { background: $color-a };
 .sg-color--b { background: $color-b };
@@ -16,3 +16,6 @@
 .sg-color--f { background: $color-f };
 .sg-color--g { background: $color-g };
 .sg-color--h { background: $color-h };
+
+.sg-font-primary { font-family: $base-font-family; }
+.sg-font-secondary { font-family: $hn-font-family; }

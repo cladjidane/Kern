@@ -27,7 +27,7 @@
     endforeach;
   }
 
-  // Display markup view & source
+  // Display markup view & source 
   function showMarkup($type) {
     $files = array();
     $handle=opendir('markup/'.$type);
@@ -102,35 +102,44 @@
     
     <div class="sg-colors sg-section">
       <h2 class="sg-h2"><a id="sg-colors" class="sg-anchor">Colors</a></h2>
-        <div class="sg-color sg-color--a"><span class="sg-color-swatch"><span class="sg-animated">#96ca2d</span></span></div>
-        <div class="sg-color sg-color--b"><span class="sg-color-swatch"><span class="sg-animated">#4bb5c1</span></span></div>
-        <div class="sg-color sg-color--c"><span class="sg-color-swatch"><span class="sg-animated">#e4dfc1</span></span></div>
-        <div class="sg-color sg-color--d"><span class="sg-color-swatch"><span class="sg-animated">#a00d58</span></span></div>
-        <div class="sg-color sg-color--e"><span class="sg-color-swatch"><span class="sg-animated">#bba276</span></span></div>
-        <div class="sg-color sg-color--f"><span class="sg-color-swatch"><span class="sg-animated">#edf7f2</span></span></div>
+        <div class="sg-color sg-color--a"><span class="sg-color-swatch"><span class="sg-animated">A - #96ca2d</span></span></div>
+        <div class="sg-color sg-color--b"><span class="sg-color-swatch"><span class="sg-animated">B - #4bb5c1</span></span></div>
+        <div class="sg-color sg-color--c"><span class="sg-color-swatch"><span class="sg-animated">C - #e4dfc1</span></span></div>
+        <div class="sg-color sg-color--d"><span class="sg-color-swatch"><span class="sg-animated">D - #a00d58</span></span></div>
+        <div class="sg-color sg-color--e"><span class="sg-color-swatch"><span class="sg-animated">E - #bba276</span></span></div>
+        <div class="sg-color sg-color--f"><span class="sg-color-swatch"><span class="sg-animated">F - #edf7f2</span></span></div>
+        <div class="sg-color sg-color--g"><span class="sg-color-swatch"><span class="sg-animated">G - #0c8c9b</span></span></div>
         <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
     </div><!--/.sg-colors-->
     
     <div class="sg-font-stacks sg-section">
-      <h2 class="sg-h2"><a id="sg-fontStacks" class="sg-anchor">Font Stacks</a></h2>
-      <p class="sg-font sg-font-primary">"HelveticaNeue", "Helvetica", Arial, sans-serif;</p>
-      <p class="sg-font sg-font-secondary">Georgia, Times, "Times New Roman", serif;</p>
+      <h2 class="sg-h2"><a id="sg-fontStacks" class="sg-anchor">Fonts</a></h2>
+      <p class="sg-font sg-font-primary">Arial, sans-serif;</p>
+      <p class="sg-font sg-font-secondary">Umbrage<br /><code>Usage : "font-family: $hn-font-family;"</code></p>
       <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
     </div><!--/.sg-font-stacks-->
   </div><!--/.sg-info-->    
+
+  <div class="sg-pattern-styles">
+    <h1 class="sg-h1">Type d'entité<small> - Selon BEM</small></h1>
+    <?php showMarkup('patterns'); ?>
+    </div><!--/.sg-pattern-styles-->
+  </div><!--/.sg-body-->
 
   <div class="sg-base-styles">    
     <h1 class="sg-h1">Base Styles</h1>
     <?php showMarkup('base'); ?>
   </div><!--/.sg-base-styles-->
 
-  <div class="sg-pattern-styles">
-    <h1 class="sg-h1">Pattern Styles<small> - Design and mark-up patterns unique to your site.</small></h1>
-    <?php showMarkup('patterns'); ?>
-    </div><!--/.sg-pattern-styles-->
-  </div><!--/.sg-body-->
-
   <script src="js/sg-plugins.js"></script>
   <script src="js/sg-scripts.js"></script>
+
+
+  <!-- JS site -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+  <script src="../js/plugin.js"></script>
+  <script src="../js/main.js"></script>
+
 </body>
 </html>

@@ -16,42 +16,44 @@
  * Menu horizontal
  */
 .nav {
+  list-style:none;
+  margin-left:0;
+  @extend .cf;
+  
+  > li {
     
-    ul {
-        list-style:none;
-        @extend .cf;
-
-        > li {
-
-            &,
-            > a {
-               display: inline-block;
-               *display: inline;
-               zoom: 1;
-            }
-        } 
+    &,
+    > a {
+      color: $color-g;
+      display:inline-block;
+      *display:inline;
+      text-decoration: none;
+      zoom:1;
     }
+  }
 }
 
 
 /**
- * Menu vertical
+ * Menu principal
  */
-.nav--v {
-    @include font-size(12px);
+.nav-mainmenu {
+  @include font-size(30px);
 
-    list-style: none;
-    margin: 0; 
-    padding: 0; 
+  font-family: $hn-font-family;
 
-    > li {
-        display: list-item;
-        padding: 0; 
+  > li {
+    @include icons-sprite(sep-menu);
 
-        > a {
-            display: block;
-            text-decoration: none; 
-            
-        }
+    background-position: sprite-position($icons, sep-menu, 0, 4px);
+    padding-left: 20px;
+
+    &:first-child {
+      background: none;   
     }
+
+    a:hover {
+      color: transparentize($color-g, 0.5);
+    }
+  }
 }

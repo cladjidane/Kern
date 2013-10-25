@@ -12,7 +12,7 @@
 ---------------------------------------------------------------------------- */
 body {margin: 0;}
 
-.blocks { display: none; }
+/*.blocks { display: none; }*/
 .is-active { display: block; }
 
 .sg-header {

@@ -1,0 +1,77 @@
+/*------------------------------------*\
+    Aside Infos
+\*------------------------------------*/
+/**
+ * aside-infos : Type de block Aside, infos pour le type de contenus
+ * Classiquement, infos pour titre / texte / readmore 
+ * 
+ */
+
+.aside-infos {
+	color: $color-g; 
+	position: relative;
+
+	.aside-infos__title {
+		@include font-size(30px);
+		@include icons-sprite(sheet-white-l);
+
+		&:before {
+			border-bottom: 1px dotted white;
+			content: " ";
+			width: 100%;
+
+			position: absolute;
+			left: 32px;
+			top: 40px;
+		}
+
+		background-position: sprite-position($icons, sheet-white-l, 0, 14px);
+		line-height: 50px;
+		padding-left: 45px; 
+	}
+
+	p {
+
+	}
+
+	.aside-infos__readmore {
+		@include font-size(18px);
+		text-align: right;	
+
+		a {		
+			@include icons-sprite(arrow-readmore-blue);
+			
+			background-position: sprite-position($icons, arrow-readmore-blue, 0, 5px);
+			color: $color-g; 
+			font-family: $hn-font-family;
+			padding-left: 10px;
+			text-decoration: none;
+				
+		}
+	}
+
+}
+
+/**
+ * With BX-slider
+ */ 
+.aside-infos--bx {
+	.slider-recette {
+		margin: 0;
+		padding: 0;
+
+		.slider-recette__layout-item {
+			position: relative;
+		}
+
+		.slider-recette__item-txt {
+			background-color: transparentize(white, 0.25);
+
+			bottom: 0;
+			height: 50%;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+		}
+	}
+}

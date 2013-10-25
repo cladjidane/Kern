@@ -29,30 +29,70 @@
 /* Color */
 /* Fonts */
 @font-face {
-  font-family: "telex";
-  src: url('/frameworks_css/kern/css/fonts/Telex/Telex-Regular.ttf') format('truetype');
+  font-family: "umbrage";
+  src: url('/_integrations/_biobreizh/css/fonts/Umbrage/umbrage.ttf') format('truetype');
 }
 
 /* alternate font-sizing */
 /* sprite */
-/* line 58, icons/*.png */
-.icons-sprite, .icons-mail, .icons-marker, .icons-tel {
-  background: url('/frameworks_css/kern/img/icons-sae4bfdcb40.png') no-repeat;
+/* line 138, icons/*.png */
+.icons-sprite, .icons-arrow-next, .icons-arrow-prev, .icons-arrow-readmore-blue, .icons-check-white, .icons-ic-plus, .icons-livre, .icons-plus-active, .icons-sep-menu, .icons-sheet-green-r, .icons-sheet-white-l, .icons-sheet-white-r, .aside-infos .aside-infos__title, .aside-infos .aside-infos__readmore a, .contact-form .contact__submit, .nav-mainmenu > li, .mozaic .mozaic__title, .bx-wrapper .bx-prev, .bx-wrapper .bx-next {
+  background: url('/_integrations/_biobreizh/img/icons-s3e33f63e07.png') no-repeat;
 }
 
 /* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-mail {
-  background-position: 0 -110px;
+.icons-arrow-next {
+  background-position: 0 -347px;
 }
 
 /* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-marker {
+.icons-arrow-prev {
+  background-position: 0 -227px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-readmore-blue {
+  background-position: 0 -661px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-check-white {
+  background-position: 0 -553px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-ic-plus {
+  background-position: 0 -60px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-livre {
+  background-position: 0 -501px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-plus-active {
   background-position: 0 0;
 }
 
 /* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-tel {
-  background-position: 0 -55px;
+.icons-sep-menu {
+  background-position: 0 -601px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-sheet-green-r {
+  background-position: 0 -407px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-sheet-white-l {
+  background-position: 0 -454px;
+}
+
+/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-sheet-white-r {
+  background-position: 0 -120px;
 }
 
 /* debug */
@@ -73,7 +113,7 @@
  * and over in your markup.
  */
 /* line 10, ../sass/generic/_clearfix.scss */
-.cf:after, .nav ul:after {
+.cf:after, .nav:after, .mozaic .mozaic__layout:after {
   content: "";
   display: table;
   clear: both;
@@ -199,6 +239,93 @@
  *
  * We work out your end points for you:
  */
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/**
+ * A more considered reset; more of a restart...
+ * As per: csswizardry.com/2011/10/reset-restarted
+ */
+/**
+* Let’s make the box model all nice, shall we...?
+*/
+/* line 16, ../sass/generic/_reset.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * The usual...
+ */
+/* line 30, ../sass/generic/_reset.scss */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+/* line 38, ../sass/generic/_reset.scss */
+abbr[title], dfn[title] {
+  cursor: help;
+}
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+/* line 45, ../sass/generic/_reset.scss */
+u, ins {
+  text-decoration: none;
+}
+
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+/* line 52, ../sass/generic/_reset.scss */
+ins {
+  border-bottom: 1px solid;
+}
+
+/**
+ * So that `alt` text is visually offset if images don’t load.
+ */
+/* line 59, ../sass/generic/_reset.scss */
+img {
+  font-style: italic;
+}
+
+/**
+ * Give form elements some cursor interactions...
+ */
+/* line 71, ../sass/generic/_reset.scss */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+/* line 77, ../sass/generic/_reset.scss */
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none;
+}
+
 /*------------------------------------*\
     $HELPER
 \*------------------------------------*/
@@ -1062,6 +1189,118 @@ table {
   border-spacing: 0;
 }
 
+/*------------------------------------*\
+    Typos
+\*------------------------------------*/
+/**
+ * Typos : gestions des typos
+ * 
+ */
+/**
+ * 1. Put the base font-size at 14px
+ */
+/* line 12, ../sass/generic/_typos.scss */
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* 1 */
+  background: white;
+}
+
+/**
+ * Font-sizing for content
+ * Preserves vertical-rythm
+ * Source: http://soqr.fr/vertical-rhythm/ 
+ */
+/* line 26, ../sass/generic/_typos.scss */
+p, ul, ol, dl,
+blockquote, pre,
+td, th,
+label, textarea,
+caption, figure {
+  line-height: 24px;
+  margin: .75em 0 0;
+}
+
+/* line 37, ../sass/generic/_typos.scss */
+h1, .h1-like {
+  margin: 1.05em 0 0 0;
+  font-family: umbrage;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+/* line 37, ../sass/generic/_typos.scss */
+h2, .h2-like {
+  margin: 1.16667em 0 0 0;
+  font-family: umbrage;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+
+/* line 37, ../sass/generic/_typos.scss */
+h3, .h3-like {
+  margin: 1.3125em 0 0 0;
+  font-family: umbrage;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* line 37, ../sass/generic/_typos.scss */
+h4, .h4-like {
+  margin: 1.5em 0 0 0;
+  font-family: umbrage;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+}
+
+/* line 37, ../sass/generic/_typos.scss */
+h5, .h5-like {
+  margin: 1.75em 0 0 0;
+  font-family: umbrage;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+/* line 37, ../sass/generic/_typos.scss */
+h6, .h6-like {
+  margin: 1.75em 0 0 0;
+  font-family: umbrage;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+/*------------------------------------*\
+    Main
+\*------------------------------------*/
+/**
+ * Main : Définition d'ensemble
+ * 
+ */
+/**
+ * 1. Orientation iOS font-size fix
+ */
+/* line 13, ../sass/generic/_main.scss */
+html {
+  font: 1em/1.5 Arial, sans-serif;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+@media (orientation: landscape) and (max-device-width: 768px) {
+  /* line 13, ../sass/generic/_main.scss */
+  html {
+    -webkit-text-size-adjust: 100%;
+    /* 1 */
+  }
+}
+
 /**
  * Kern - Areas
  */
@@ -1169,39 +1408,229 @@ table {
  * Kern - Modules
  */
 /*------------------------------------*\
-    skipmenu
+    Aside Infos
 \*------------------------------------*/
 /**
- * Skipmenu : Menu de haut de page
- * Liens d'évitements
+ * aside-infos : Type de block Aside, infos pour le type de contenus
+ * Classiquement, infos pour titre / texte / readmore 
  * 
  */
-/* line 10, ../sass/modules/_skipmenu.scss */
-.skipmenu {
-  height: 10px;
+/* line 10, ../sass/modules/_aside-infos.scss */
+.aside-infos {
+  color: #0c8c9b;
+  position: relative;
+}
+/* line 14, ../sass/modules/_aside-infos.scss */
+.aside-infos .aside-infos__title {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6;
+  background-position: 0 -454px;
+  background-position: 0 -440px;
+  line-height: 50px;
+  padding-left: 45px;
+}
+/* line 18, ../sass/modules/_aside-infos.scss */
+.aside-infos .aside-infos__title:before {
+  border-bottom: 1px dotted white;
+  content: " ";
+  width: 100%;
+  position: absolute;
+  left: 32px;
+  top: 40px;
+}
+/* line 37, ../sass/modules/_aside-infos.scss */
+.aside-infos .aside-infos__readmore {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  text-align: right;
+}
+/* line 41, ../sass/modules/_aside-infos.scss */
+.aside-infos .aside-infos__readmore a {
+  background-position: 0 -661px;
+  background-position: 0 -656px;
+  color: #0c8c9b;
+  font-family: umbrage;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+/**
+ * With BX-slider
+ */
+/* line 59, ../sass/modules/_aside-infos.scss */
+.aside-infos--bx .slider-recette {
+  margin: 0;
+  padding: 0;
+}
+/* line 63, ../sass/modules/_aside-infos.scss */
+.aside-infos--bx .slider-recette .slider-recette__layout-item {
+  position: relative;
+}
+/* line 67, ../sass/modules/_aside-infos.scss */
+.aside-infos--bx .slider-recette .slider-recette__item-txt {
+  background-color: rgba(255, 255, 255, 0.75);
+  bottom: 0;
+  height: 50%;
+  position: absolute;
+  text-align: center;
   width: 100%;
 }
 
 /*------------------------------------*\
-    brand
+    Breadcrumb
 \*------------------------------------*/
 /**
- * Brand : pour la mise en page du logo
- * 
+ * Breadcrum : Inuit.css
  */
-/* line 10, ../sass/modules/_brand.scss */
-.brand img {
-  max-width: 100%;
+/**
+ * Simple breadcrumb styling to apply to (ordered) lists. Extends `.nav`, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>The Board</a></li>
+       <li class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ * Demo: jsfiddle.net/inuitcss/rkAY9
+ *
+ */
+/* line 22, ../sass/modules/_breadcrumb.scss */
+.breadcrumb > li + li:before {
+  content: "\00BB" "\00A0";
 }
 
-/*
- * Knacss
- * brand--w30-left
+/**
+ * For denoting a path-like structure, GitHub style, e.g.:
+ *
+   <ol class="nav  breadcrumb--path">
+       <li class=breadcrumb__root><a href=#>inuit.css</a></li>
+       <li><a href=#>inuit.css</a></li>
+       <li><a href=#>partials</a></li>
+       <li class=current><a href=#>objects</a></li>
+   </ol>
+ *
+ */
+/* line 38, ../sass/modules/_breadcrumb.scss */
+.breadcrumb--path > li + li:before {
+  content: "\002F" "\00A0";
+}
+
+/**
+ * Assign a delimiter on the fly through a data attribute, e.g.:
+ *
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li data-breadcrumb="|"><a href=#>About</a></li>
+       <li data-breadcrumb="|"><a href=#>The Board</a></li>
+       <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
+   </ol>
+ *
+ */
+/* line 54, ../sass/modules/_breadcrumb.scss */
+.breadcrumb > li + li[data-breadcrumb]:before {
+  content: attr(data-breadcrumb) "\00A0";
+}
+
+/**
+ * Denote the root of the tree.
+ */
+/* line 62, ../sass/modules/_breadcrumb.scss */
+.breadcrumb__root {
+  font-weight: bold;
+}
+
+/*------------------------------------*\
+    article
+\*------------------------------------*/
+/**
+ * Article : mise en form d'un article
+ * Avec ses composant
+ * 	- Titre
+ * 	- Champeau
+ *  - Sous-titre
+ *  - ...
+ */
+/* line 14, ../sass/modules/_article.scss */
+.article {
+  padding: 20px;
+}
+/* line 17, ../sass/modules/_article.scss */
+.article a {
+  text-decoration: none;
+}
+/* line 21, ../sass/modules/_article.scss */
+.article ul {
+  margin-left: 40px;
+}
+/* line 31, ../sass/modules/_article.scss */
+.article .article__chapo {
+  font-weight: bold;
+}
+
+/*------------------------------------*\
+    contact
+\*------------------------------------*/
+/**
+ * Contact : mise en form des zones de contacts
+ * Form /texte
  * 
  */
-/* line 20, ../sass/modules/_brand.scss */
-.brand--lm {
-  margin: 20px 0;
+/* line 14, ../sass/modules/_contact.scss */
+.contact-txt {
+  height: 300px;
+}
+/* line 17, ../sass/modules/_contact.scss */
+.contact-txt > h2 {
+  margin: 0;
+  line-height: 55px;
+}
+/* line 22, ../sass/modules/_contact.scss */
+.contact-txt > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 27, ../sass/modules/_contact.scss */
+.contact-txt > ul li {
+  padding: 15px 0;
+  padding-left: 40px;
+  margin-top: 1px;
+}
+
+/* line 42, ../sass/modules/_contact.scss */
+.contact-form {
+  color: white;
+}
+/* line 45, ../sass/modules/_contact.scss */
+.contact-form .contact__label {
+  display: none;
+}
+/* line 49, ../sass/modules/_contact.scss */
+.contact-form .contact__field-txt {
+  background: white;
+  border: 1px solid #adf1f9;
+  padding: 5px 5px 5px 10px;
+  width: 100%;
+}
+/* line 56, ../sass/modules/_contact.scss */
+.contact-form .contact__field-txt--area {
+  margin: 0;
+}
+/* line 60, ../sass/modules/_contact.scss */
+.contact-form .contact__submit {
+  background-position: 0 -553px;
+  background-position: 15px -548px;
+  background-color: #a00d58;
+  border: none;
+  color: white;
+  padding: 10px 20px 10px 50px;
+}
+/* line 70, ../sass/modules/_contact.scss */
+.contact-form .contact__error, .contact-form .contact__success {
+  display: none;
 }
 
 /*------------------------------------*\
@@ -1220,39 +1649,44 @@ table {
 /**
  * Menu horizontal
  */
-/* line 20, ../sass/modules/_nav.scss */
-.nav ul {
+/* line 18, ../sass/modules/_nav.scss */
+.nav {
   list-style: none;
+  margin-left: 0;
 }
-/* line 27, ../sass/modules/_nav.scss */
-.nav ul > li,
-.nav ul > li > a {
+/* line 26, ../sass/modules/_nav.scss */
+.nav > li,
+.nav > li > a {
+  color: #0c8c9b;
   display: inline-block;
   *display: inline;
+  text-decoration: none;
   zoom: 1;
 }
 
 /**
- * Menu vertical
+ * Menu principal
  */
 /* line 40, ../sass/modules/_nav.scss */
-.nav--v {
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.nav-mainmenu {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6;
+  font-family: umbrage;
 }
-/* line 47, ../sass/modules/_nav.scss */
-.nav--v > li {
-  display: list-item;
-  padding: 0;
+/* line 45, ../sass/modules/_nav.scss */
+.nav-mainmenu > li {
+  background-position: 0 -601px;
+  background-position: 0 -597px;
+  padding-left: 20px;
 }
 /* line 51, ../sass/modules/_nav.scss */
-.nav--v > li > a {
-  display: block;
-  text-decoration: none;
+.nav-mainmenu > li:first-child {
+  background: none;
+}
+/* line 55, ../sass/modules/_nav.scss */
+.nav-mainmenu > li a:hover {
+  color: rgba(12, 140, 155, 0.5);
 }
 
 /*------------------------------------*\
@@ -1264,235 +1698,374 @@ table {
 /**
  * Mozaic
  */
-/**
- * Mozaix pour Le Mestre
- * 
- * 
- */
-/* line 21, ../sass/modules/_mozaic.scss */
-.mozaic--lm {
+/* line 11, ../sass/modules/_mozaic.scss */
+.mozaic {
   position: relative;
-  height: 300px;
-  width: 100%;
 }
-/* line 27, ../sass/modules/_mozaic.scss */
-.mozaic--lm ul {
-  height: 300px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  width: 3000px;
-}
-/* line 35, ../sass/modules/_mozaic.scss */
-.mozaic--lm ul li {
-  display: inline;
-}
-
-/*------------------------------------*\
-    contact
-\*------------------------------------*/
-/**
- * Contact : mise en form des zones de contacts
- * Form /texte
- * 
- */
-/* line 10, ../sass/modules/_contact.scss */
-.contact {
-  padding: 20px 0 10px 30px;
-  width: 320px;
-}
-
-/* line 15, ../sass/modules/_contact.scss */
-.contact-txt {
-  height: 300px;
-}
-/* line 18, ../sass/modules/_contact.scss */
-.contact-txt > h2 {
-  margin: 0;
-  line-height: 55px;
-}
-/* line 23, ../sass/modules/_contact.scss */
-.contact-txt > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 28, ../sass/modules/_contact.scss */
-.contact-txt > ul li {
-  padding: 15px 0;
-  padding-left: 40px;
-  margin-top: 1px;
-}
-/* line 33, ../sass/modules/_contact.scss */
-.contact-txt > ul li:first-child {
-  background-position: 0 10px;
-}
-
-/* line 43, ../sass/modules/_contact.scss */
-.contact-form {
+/* line 15, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__title {
+  background-position: 0 -120px;
+  background-position: 100% -106px;
   color: white;
+  line-height: 50px;
+  padding-right: 45px;
 }
-/* line 46, ../sass/modules/_contact.scss */
-.contact-form > h3 {
-  margin-bottom: 10px;
+/* line 19, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__title:before {
+  border-bottom: 1px dotted white;
+  content: " ";
+  width: 100%;
+  position: absolute;
+  right: 32px;
+  top: 40px;
 }
-/* line 50, ../sass/modules/_contact.scss */
-.contact-form input {
+/* line 36, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__layout {
+  list-style: none;
+}
+/* line 43, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__item {
+  background-color: white;
+  float: left;
+  margin: 0 0.5% 5px 0;
+  position: relative;
+  width: 33%;
+}
+/* line 50, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__item:nth-child(3), .mozaic .mozaic__item:nth-child(6), .mozaic .mozaic__item:nth-child(9) {
+  margin-right: 0;
+}
+/* line 54, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* line 60, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__item a {
+  color: #0c8c9b;
+}
+/* line 67, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__item-desc {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  background-color: rgba(255, 255, 255, 0.75);
+  bottom: 0;
+  font-family: umbrage;
+  height: 40%;
+  position: absolute;
   width: 100%;
 }
-/* line 54, ../sass/modules/_contact.scss */
-.contact-form textarea {
+/* line 77, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic__item-desc span {
+  display: inline-block;
+  line-height: 10px;
+  text-align: center;
+  vertical-align: middle;
   width: 100%;
 }
-/* line 58, ../sass/modules/_contact.scss */
-.contact-form button {
-  border: none;
-  margin-top: 10px;
-  padding: 10px 20px;
+
+/**
+ * Mozaic avec pagination
+ */
+/* line 91, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic-page {
+  display: none;
+}
+/* line 95, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic-page-active {
+  display: block;
+}
+/* line 99, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic-next {
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 106, ../sass/modules/_mozaic.scss */
+.mozaic .mozaic-next div {
+  height: 40px;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
 }
 
 /*------------------------------------*\
-    brand
+    $GRIDS
 \*------------------------------------*/
 /**
- * Brand : pour la mise en page du logo
- * 
+ * Fluid and nestable grid system, e.g.:
+ *
+   <div class="grid">
+
+       <div class="grid__item  one-third">
+           <p>One third grid</p>
+       </div><!--
+
+    --><div class="grid__item  two-thirds">
+           <p>Two thirds grid</p>
+       </div><!--
+
+    --><div class="grid__item  one-half">
+           <p>One half grid</p>
+       </div><!--
+
+    --><div class="grid__item  one-quarter">
+           <p>One quarter grid</p>
+       </div><!--
+
+    --><div class="grid__item  one-quarter">
+           <p>One quarter grid</p>
+       </div>
+
+   </div>
+ *
+ * Demo: jsfiddle.net/inuitcss/CLYUC
+ *
  */
-/*------------------------------------*\
-    brand
-\*------------------------------------*/
 /**
- * Brand : pour la mise en page du logo
- * 
+ * Grid wrapper
  */
-/*------------------------------------*\
-    alaune
-\*------------------------------------*/
+/* line 39, ../sass/modules/_grids.scss */
+.grid {
+  margin-left: -24px;
+  list-style: none;
+  margin-bottom: 0;
+}
+
 /**
- * alaune : mise en form d'un bloc "A la une" 
- * Généralement composé 
- * 	- d'une image ou d'une couleur de fond
- * 	- D'un titre
- *  - + 
+ * Very infrequently occuring grid wrappers as children of grid wrappers.
  */
-/* line 12, ../sass/modules/_alaune.scss */
-.alaune {
+/* line 49, ../sass/modules/_grids.scss */
+.grid > .grid {
+  margin-left: 0;
+}
+
+/**
+ * Grid
+ */
+/* line 57, ../sass/modules/_grids.scss */
+.grid__item {
+  display: inline-block;
+  width: 100%;
+  padding-left: 24px;
+  vertical-align: top;
+}
+
+/**
+ * Kern - Plugins tiers
+ */
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+/* line 16, ../sass/plugins/bxslider.scss */
+.bx-wrapper {
   position: relative;
+  margin: 0 auto 60px;
+  padding: 0 50px;
+  *zoom: 1;
 }
-/* line 15, ../sass/modules/_alaune.scss */
-.alaune.alaune--first {
-  min-height: 424px;
+
+/* line 23, ../sass/plugins/bxslider.scss */
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
 }
-/* line 19, ../sass/modules/_alaune.scss */
-.alaune.alaune--second {
-  min-height: 275px;
+
+/** THEME
+===================================*/
+/* line 31, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-viewport {
+  left: -5px;
 }
-/* line 23, ../sass/modules/_alaune.scss */
-.alaune a > * {
-  position: relative;
+
+/* line 36, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
 }
-/* line 27, ../sass/modules/_alaune.scss */
-.alaune .alaune__img {
+
+/* LOADER */
+/* line 44, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(../img/bxslider/bx_loader.gif) center center no-repeat;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2000;
 }
-/* line 34, ../sass/modules/_alaune.scss */
-.alaune .alaune__info {
-  width: 50px;
-  height: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
-  color: white;
+
+/* PAGER */
+/* line 57, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-pager {
   text-align: center;
-  line-height: 14px;
-  padding-top: 10px;
-  margin: 21px;
-}
-/* line 45, ../sass/modules/_alaune.scss */
-.alaune .alaune__info span {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  display: block;
+  font-size: .85em;
+  font-family: Arial;
   font-weight: bold;
-  width: 100%;
+  color: #666;
+  padding-top: 20px;
 }
-/* line 53, ../sass/modules/_alaune.scss */
-.alaune .alaune__title {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
-  color: white;
+
+/* line 67, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 73, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
   display: block;
-  line-height: 20px;
-  margin-top: 30px;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
-/* line 62, ../sass/modules/_alaune.scss */
-.alaune .alaune__title .alaune__title--big {
-  font-size: 22px;
-  font-size: 1.375rem;
-  line-height: 1.09091;
-  display: block;
+
+/* line 87, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #000;
 }
-/* line 66, ../sass/modules/_alaune.scss */
-.alaune .alaune__title .alaune__title--big::before {
-  content: "« ";
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+/* line 93, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-prev {
+  background-position: 0 -167px;
+  left: 2px;
 }
-/* line 70, ../sass/modules/_alaune.scss */
-.alaune .alaune__title .alaune__title--big::after {
-  content: " »";
+
+/* line 99, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-next {
+  background-position: 0 -287px;
+  right: 14px;
 }
-/* line 76, ../sass/modules/_alaune.scss */
-.alaune .alaune__desc {
-  margin: 20px 20px 20px 0;
+
+/* line 105, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-prev:hover {
+  background-position: 0 -227px;
+}
+
+/* line 109, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-next:hover {
+  background-position: 0 -347px;
+}
+
+/* line 113, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+/* line 124, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+/* line 130, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls-auto {
   text-align: center;
 }
 
-/*------------------------------------*\
-    brand
-\*------------------------------------*/
-/**
- * Brand : pour la mise en page du logo
- * 
- */
-/*------------------------------------*\
-    article
-\*------------------------------------*/
-/**
- * Article : mise en form d'un article
- * Avec ses composant
- * 	- Titre
- * 	- Champeau
- *  - Sous-titre
- *  - ...
- */
-/* line 14, ../sass/modules/_article.scss */
-.article {
-  padding: 30px 20px 50px 0;
+/* line 134, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url(../img/bxslider/controls.png) -86px -11px no-repeat;
+  margin: 0 3px;
 }
-/* line 18, ../sass/modules/_article.scss */
-.article a {
-  text-decoration: none;
+
+/* line 145, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: -86px 0;
 }
-/* line 23, ../sass/modules/_article.scss */
-.article .article__header h1 {
-  line-height: 60px;
-  text-transform: uppercase;
+
+/* line 149, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url(../img/bxslider/controls.png) -86px -44px no-repeat;
+  margin: 0 3px;
 }
-/* line 29, ../sass/modules/_article.scss */
-.article .article__chapo {
-  font-weight: bold;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+
+/* line 160, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+/* line 166, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+
+/* line 171, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+/* line 178, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666666 \9;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+
+/* line 187, ../sass/plugins/bxslider.scss */
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
 }
 
 /**
@@ -1506,6 +2079,11 @@ table {
  * voir /_sg
  * 
  */
+/* line 9, ../sass/_sg.scss */
+.blocks {
+  background: silver;
+}
+
 /* line 11, ../sass/_sg.scss */
 .sg-color--a {
   background: #96ca2d;
@@ -1538,10 +2116,937 @@ table {
 
 /* line 17, ../sass/_sg.scss */
 .sg-color--g {
-  background: #edf7f2;
+  background: #0c8c9b;
 }
 
 /* line 18, ../sass/_sg.scss */
 .sg-color--h {
   background: #edf7f2;
 }
+
+/* line 20, ../sass/_sg.scss */
+.sg-font-primary {
+  font-family: Arial, sans-serif;
+}
+
+/* line 21, ../sass/_sg.scss */
+.sg-font-secondary {
+  font-family: umbrage;
+}
+
+/**
+ * Kern - Guidelines (sg)
+ */
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * Sizes in human readable format. These are used in conjunction with other
+ * objects and abstractions found in inuit.css, most commonly the grid system
+ * and faux flexbox.
+ *
+ * We have a mixin to generate our widths and their breakpoint-specific
+ * variations.
+ */
+/**
+* Whole
+*/
+/* line 17, ../sass/generic/_widths.scss */
+.one-whole {
+  width: 100%;
+}
+
+/**
+* Halves
+*/
+/* line 23, ../sass/generic/_widths.scss */
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
+  width: 50%;
+}
+
+/**
+* Thirds
+*/
+/* line 29, ../sass/generic/_widths.scss */
+.one-third, .two-sixths, .four-twelfths {
+  width: 33.333%;
+}
+
+/* line 30, ../sass/generic/_widths.scss */
+.two-thirds, .four-sixths, .eight-twelfths {
+  width: 66.666%;
+}
+
+/**
+* Quarters
+*/
+/* line 36, ../sass/generic/_widths.scss */
+.one-quarter, .two-eighths, .three-twelfths {
+  width: 25%;
+}
+
+/* line 38, ../sass/generic/_widths.scss */
+.three-quarters, .six-eighths, .nine-twelfths {
+  width: 75%;
+}
+
+/**
+* Fifths
+*/
+/* line 44, ../sass/generic/_widths.scss */
+.one-fifth, .two-tenths {
+  width: 20%;
+}
+
+/* line 45, ../sass/generic/_widths.scss */
+.two-fifths, .four-tenths {
+  width: 40%;
+}
+
+/* line 46, ../sass/generic/_widths.scss */
+.three-fifths, .six-tenths {
+  width: 60%;
+}
+
+/* line 47, ../sass/generic/_widths.scss */
+.four-fifths, .eight-tenths {
+  width: 80%;
+}
+
+/**
+* Sixths
+*/
+/* line 53, ../sass/generic/_widths.scss */
+.one-sixth, .two-twelfths {
+  width: 16.666%;
+}
+
+/* line 57, ../sass/generic/_widths.scss */
+.five-sixths, .ten-twelfths {
+  width: 83.333%;
+}
+
+/**
+* Eighths
+*/
+/* line 63, ../sass/generic/_widths.scss */
+.one-eighth {
+  width: 12.5%;
+}
+
+/* line 65, ../sass/generic/_widths.scss */
+.three-eighths {
+  width: 37.5%;
+}
+
+/* line 67, ../sass/generic/_widths.scss */
+.five-eighths {
+  width: 62.5%;
+}
+
+/* line 69, ../sass/generic/_widths.scss */
+.seven-eighths {
+  width: 87.5%;
+}
+
+/**
+* Tenths
+*/
+/* line 75, ../sass/generic/_widths.scss */
+.one-tenth {
+  width: 10%;
+}
+
+/* line 77, ../sass/generic/_widths.scss */
+.three-tenths {
+  width: 30%;
+}
+
+/* line 81, ../sass/generic/_widths.scss */
+.seven-tenths {
+  width: 70%;
+}
+
+/* line 83, ../sass/generic/_widths.scss */
+.nine-tenths {
+  width: 90%;
+}
+
+/**
+* Twelfths
+*/
+/* line 89, ../sass/generic/_widths.scss */
+.one-twelfth {
+  width: 8.333%;
+}
+
+/* line 93, ../sass/generic/_widths.scss */
+.five-twelfths {
+  width: 41.666%;
+}
+
+/* line 95, ../sass/generic/_widths.scss */
+.seven-twelfths {
+  width: 58.333%;
+}
+
+/* line 99, ../sass/generic/_widths.scss */
+.eleven-twelfths {
+  width: 91.666%;
+}
+
+/**
+ * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
+ * access to these classes. You can define at which breakpoint you’d like an
+ * element to be a certain size, e.g.:
+ *
+ * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
+ *
+ * This would create a `div` that, at ‘desktop’ sizes, takes up a quarter of the
+ * horizontal space, a half of that space at ‘tablet’ sizes, and goes full width
+ * at ‘mobile’ sizes.
+ *
+ * Demo: jsfiddle.net/inuitcss/WS4Ge
+ *
+ */
+@media only screen and (max-width: 480px) {
+  /**
+  * Whole
+  */
+  /* line 17, ../sass/generic/_widths.scss */
+  .palm-one-whole {
+    width: 100%;
+  }
+
+  /**
+  * Halves
+  */
+  /* line 23, ../sass/generic/_widths.scss */
+  .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths, .palm-five-tenths, .palm-six-twelfths {
+    width: 50%;
+  }
+
+  /**
+  * Thirds
+  */
+  /* line 29, ../sass/generic/_widths.scss */
+  .palm-one-third, .palm-two-sixths, .palm-four-twelfths {
+    width: 33.333%;
+  }
+
+  /* line 30, ../sass/generic/_widths.scss */
+  .palm-two-thirds, .palm-four-sixths, .palm-eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+  * Quarters
+  */
+  /* line 36, ../sass/generic/_widths.scss */
+  .palm-one-quarter, .palm-two-eighths, .palm-three-twelfths {
+    width: 25%;
+  }
+
+  /* line 38, ../sass/generic/_widths.scss */
+  .palm-three-quarters, .palm-six-eighths, .palm-nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+  * Fifths
+  */
+  /* line 44, ../sass/generic/_widths.scss */
+  .palm-one-fifth, .palm-two-tenths {
+    width: 20%;
+  }
+
+  /* line 45, ../sass/generic/_widths.scss */
+  .palm-two-fifths, .palm-four-tenths {
+    width: 40%;
+  }
+
+  /* line 46, ../sass/generic/_widths.scss */
+  .palm-three-fifths, .palm-six-tenths {
+    width: 60%;
+  }
+
+  /* line 47, ../sass/generic/_widths.scss */
+  .palm-four-fifths, .palm-eight-tenths {
+    width: 80%;
+  }
+
+  /**
+  * Sixths
+  */
+  /* line 53, ../sass/generic/_widths.scss */
+  .palm-one-sixth, .palm-two-twelfths {
+    width: 16.666%;
+  }
+
+  /* line 57, ../sass/generic/_widths.scss */
+  .palm-five-sixths, .palm-ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+  * Eighths
+  */
+  /* line 63, ../sass/generic/_widths.scss */
+  .palm-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 65, ../sass/generic/_widths.scss */
+  .palm-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 67, ../sass/generic/_widths.scss */
+  .palm-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 69, ../sass/generic/_widths.scss */
+  .palm-seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+  * Tenths
+  */
+  /* line 75, ../sass/generic/_widths.scss */
+  .palm-one-tenth {
+    width: 10%;
+  }
+
+  /* line 77, ../sass/generic/_widths.scss */
+  .palm-three-tenths {
+    width: 30%;
+  }
+
+  /* line 81, ../sass/generic/_widths.scss */
+  .palm-seven-tenths {
+    width: 70%;
+  }
+
+  /* line 83, ../sass/generic/_widths.scss */
+  .palm-nine-tenths {
+    width: 90%;
+  }
+
+  /**
+  * Twelfths
+  */
+  /* line 89, ../sass/generic/_widths.scss */
+  .palm-one-twelfth {
+    width: 8.333%;
+  }
+
+  /* line 93, ../sass/generic/_widths.scss */
+  .palm-five-twelfths {
+    width: 41.666%;
+  }
+
+  /* line 95, ../sass/generic/_widths.scss */
+  .palm-seven-twelfths {
+    width: 58.333%;
+  }
+
+  /* line 99, ../sass/generic/_widths.scss */
+  .palm-eleven-twelfths {
+    width: 91.666%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+  * Whole
+  */
+  /* line 17, ../sass/generic/_widths.scss */
+  .lap-one-whole {
+    width: 100%;
+  }
+
+  /**
+  * Halves
+  */
+  /* line 23, ../sass/generic/_widths.scss */
+  .lap-one-half, .lap-two-quarters, .lap-three-sixths, .lap-four-eighths, .lap-five-tenths, .lap-six-twelfths {
+    width: 50%;
+  }
+
+  /**
+  * Thirds
+  */
+  /* line 29, ../sass/generic/_widths.scss */
+  .lap-one-third, .lap-two-sixths, .lap-four-twelfths {
+    width: 33.333%;
+  }
+
+  /* line 30, ../sass/generic/_widths.scss */
+  .lap-two-thirds, .lap-four-sixths, .lap-eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+  * Quarters
+  */
+  /* line 36, ../sass/generic/_widths.scss */
+  .lap-one-quarter, .lap-two-eighths, .lap-three-twelfths {
+    width: 25%;
+  }
+
+  /* line 38, ../sass/generic/_widths.scss */
+  .lap-three-quarters, .lap-six-eighths, .lap-nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+  * Fifths
+  */
+  /* line 44, ../sass/generic/_widths.scss */
+  .lap-one-fifth, .lap-two-tenths {
+    width: 20%;
+  }
+
+  /* line 45, ../sass/generic/_widths.scss */
+  .lap-two-fifths, .lap-four-tenths {
+    width: 40%;
+  }
+
+  /* line 46, ../sass/generic/_widths.scss */
+  .lap-three-fifths, .lap-six-tenths {
+    width: 60%;
+  }
+
+  /* line 47, ../sass/generic/_widths.scss */
+  .lap-four-fifths, .lap-eight-tenths {
+    width: 80%;
+  }
+
+  /**
+  * Sixths
+  */
+  /* line 53, ../sass/generic/_widths.scss */
+  .lap-one-sixth, .lap-two-twelfths {
+    width: 16.666%;
+  }
+
+  /* line 57, ../sass/generic/_widths.scss */
+  .lap-five-sixths, .lap-ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+  * Eighths
+  */
+  /* line 63, ../sass/generic/_widths.scss */
+  .lap-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 65, ../sass/generic/_widths.scss */
+  .lap-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 67, ../sass/generic/_widths.scss */
+  .lap-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 69, ../sass/generic/_widths.scss */
+  .lap-seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+  * Tenths
+  */
+  /* line 75, ../sass/generic/_widths.scss */
+  .lap-one-tenth {
+    width: 10%;
+  }
+
+  /* line 77, ../sass/generic/_widths.scss */
+  .lap-three-tenths {
+    width: 30%;
+  }
+
+  /* line 81, ../sass/generic/_widths.scss */
+  .lap-seven-tenths {
+    width: 70%;
+  }
+
+  /* line 83, ../sass/generic/_widths.scss */
+  .lap-nine-tenths {
+    width: 90%;
+  }
+
+  /**
+  * Twelfths
+  */
+  /* line 89, ../sass/generic/_widths.scss */
+  .lap-one-twelfth {
+    width: 8.333%;
+  }
+
+  /* line 93, ../sass/generic/_widths.scss */
+  .lap-five-twelfths {
+    width: 41.666%;
+  }
+
+  /* line 95, ../sass/generic/_widths.scss */
+  .lap-seven-twelfths {
+    width: 58.333%;
+  }
+
+  /* line 99, ../sass/generic/_widths.scss */
+  .lap-eleven-twelfths {
+    width: 91.666%;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /**
+  * Whole
+  */
+  /* line 17, ../sass/generic/_widths.scss */
+  .lap-and-up-one-whole {
+    width: 100%;
+  }
+
+  /**
+  * Halves
+  */
+  /* line 23, ../sass/generic/_widths.scss */
+  .lap-and-up-one-half, .lap-and-up-two-quarters, .lap-and-up-three-sixths, .lap-and-up-four-eighths, .lap-and-up-five-tenths, .lap-and-up-six-twelfths {
+    width: 50%;
+  }
+
+  /**
+  * Thirds
+  */
+  /* line 29, ../sass/generic/_widths.scss */
+  .lap-and-up-one-third, .lap-and-up-two-sixths, .lap-and-up-four-twelfths {
+    width: 33.333%;
+  }
+
+  /* line 30, ../sass/generic/_widths.scss */
+  .lap-and-up-two-thirds, .lap-and-up-four-sixths, .lap-and-up-eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+  * Quarters
+  */
+  /* line 36, ../sass/generic/_widths.scss */
+  .lap-and-up-one-quarter, .lap-and-up-two-eighths, .lap-and-up-three-twelfths {
+    width: 25%;
+  }
+
+  /* line 38, ../sass/generic/_widths.scss */
+  .lap-and-up-three-quarters, .lap-and-up-six-eighths, .lap-and-up-nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+  * Fifths
+  */
+  /* line 44, ../sass/generic/_widths.scss */
+  .lap-and-up-one-fifth, .lap-and-up-two-tenths {
+    width: 20%;
+  }
+
+  /* line 45, ../sass/generic/_widths.scss */
+  .lap-and-up-two-fifths, .lap-and-up-four-tenths {
+    width: 40%;
+  }
+
+  /* line 46, ../sass/generic/_widths.scss */
+  .lap-and-up-three-fifths, .lap-and-up-six-tenths {
+    width: 60%;
+  }
+
+  /* line 47, ../sass/generic/_widths.scss */
+  .lap-and-up-four-fifths, .lap-and-up-eight-tenths {
+    width: 80%;
+  }
+
+  /**
+  * Sixths
+  */
+  /* line 53, ../sass/generic/_widths.scss */
+  .lap-and-up-one-sixth, .lap-and-up-two-twelfths {
+    width: 16.666%;
+  }
+
+  /* line 57, ../sass/generic/_widths.scss */
+  .lap-and-up-five-sixths, .lap-and-up-ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+  * Eighths
+  */
+  /* line 63, ../sass/generic/_widths.scss */
+  .lap-and-up-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 65, ../sass/generic/_widths.scss */
+  .lap-and-up-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 67, ../sass/generic/_widths.scss */
+  .lap-and-up-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 69, ../sass/generic/_widths.scss */
+  .lap-and-up-seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+  * Tenths
+  */
+  /* line 75, ../sass/generic/_widths.scss */
+  .lap-and-up-one-tenth {
+    width: 10%;
+  }
+
+  /* line 77, ../sass/generic/_widths.scss */
+  .lap-and-up-three-tenths {
+    width: 30%;
+  }
+
+  /* line 81, ../sass/generic/_widths.scss */
+  .lap-and-up-seven-tenths {
+    width: 70%;
+  }
+
+  /* line 83, ../sass/generic/_widths.scss */
+  .lap-and-up-nine-tenths {
+    width: 90%;
+  }
+
+  /**
+  * Twelfths
+  */
+  /* line 89, ../sass/generic/_widths.scss */
+  .lap-and-up-one-twelfth {
+    width: 8.333%;
+  }
+
+  /* line 93, ../sass/generic/_widths.scss */
+  .lap-and-up-five-twelfths {
+    width: 41.666%;
+  }
+
+  /* line 95, ../sass/generic/_widths.scss */
+  .lap-and-up-seven-twelfths {
+    width: 58.333%;
+  }
+
+  /* line 99, ../sass/generic/_widths.scss */
+  .lap-and-up-eleven-twelfths {
+    width: 91.666%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /**
+  * Whole
+  */
+  /* line 17, ../sass/generic/_widths.scss */
+  .portable-one-whole {
+    width: 100%;
+  }
+
+  /**
+  * Halves
+  */
+  /* line 23, ../sass/generic/_widths.scss */
+  .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths, .portable-five-tenths, .portable-six-twelfths {
+    width: 50%;
+  }
+
+  /**
+  * Thirds
+  */
+  /* line 29, ../sass/generic/_widths.scss */
+  .portable-one-third, .portable-two-sixths, .portable-four-twelfths {
+    width: 33.333%;
+  }
+
+  /* line 30, ../sass/generic/_widths.scss */
+  .portable-two-thirds, .portable-four-sixths, .portable-eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+  * Quarters
+  */
+  /* line 36, ../sass/generic/_widths.scss */
+  .portable-one-quarter, .portable-two-eighths, .portable-three-twelfths {
+    width: 25%;
+  }
+
+  /* line 38, ../sass/generic/_widths.scss */
+  .portable-three-quarters, .portable-six-eighths, .portable-nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+  * Fifths
+  */
+  /* line 44, ../sass/generic/_widths.scss */
+  .portable-one-fifth, .portable-two-tenths {
+    width: 20%;
+  }
+
+  /* line 45, ../sass/generic/_widths.scss */
+  .portable-two-fifths, .portable-four-tenths {
+    width: 40%;
+  }
+
+  /* line 46, ../sass/generic/_widths.scss */
+  .portable-three-fifths, .portable-six-tenths {
+    width: 60%;
+  }
+
+  /* line 47, ../sass/generic/_widths.scss */
+  .portable-four-fifths, .portable-eight-tenths {
+    width: 80%;
+  }
+
+  /**
+  * Sixths
+  */
+  /* line 53, ../sass/generic/_widths.scss */
+  .portable-one-sixth, .portable-two-twelfths {
+    width: 16.666%;
+  }
+
+  /* line 57, ../sass/generic/_widths.scss */
+  .portable-five-sixths, .portable-ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+  * Eighths
+  */
+  /* line 63, ../sass/generic/_widths.scss */
+  .portable-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 65, ../sass/generic/_widths.scss */
+  .portable-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 67, ../sass/generic/_widths.scss */
+  .portable-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 69, ../sass/generic/_widths.scss */
+  .portable-seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+  * Tenths
+  */
+  /* line 75, ../sass/generic/_widths.scss */
+  .portable-one-tenth {
+    width: 10%;
+  }
+
+  /* line 77, ../sass/generic/_widths.scss */
+  .portable-three-tenths {
+    width: 30%;
+  }
+
+  /* line 81, ../sass/generic/_widths.scss */
+  .portable-seven-tenths {
+    width: 70%;
+  }
+
+  /* line 83, ../sass/generic/_widths.scss */
+  .portable-nine-tenths {
+    width: 90%;
+  }
+
+  /**
+  * Twelfths
+  */
+  /* line 89, ../sass/generic/_widths.scss */
+  .portable-one-twelfth {
+    width: 8.333%;
+  }
+
+  /* line 93, ../sass/generic/_widths.scss */
+  .portable-five-twelfths {
+    width: 41.666%;
+  }
+
+  /* line 95, ../sass/generic/_widths.scss */
+  .portable-seven-twelfths {
+    width: 58.333%;
+  }
+
+  /* line 99, ../sass/generic/_widths.scss */
+  .portable-eleven-twelfths {
+    width: 91.666%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /**
+  * Whole
+  */
+  /* line 17, ../sass/generic/_widths.scss */
+  .desk-one-whole {
+    width: 100%;
+  }
+
+  /**
+  * Halves
+  */
+  /* line 23, ../sass/generic/_widths.scss */
+  .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths, .desk-five-tenths, .desk-six-twelfths {
+    width: 50%;
+  }
+
+  /**
+  * Thirds
+  */
+  /* line 29, ../sass/generic/_widths.scss */
+  .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
+    width: 33.333%;
+  }
+
+  /* line 30, ../sass/generic/_widths.scss */
+  .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
+    width: 66.666%;
+  }
+
+  /**
+  * Quarters
+  */
+  /* line 36, ../sass/generic/_widths.scss */
+  .desk-one-quarter, .desk-two-eighths, .desk-three-twelfths {
+    width: 25%;
+  }
+
+  /* line 38, ../sass/generic/_widths.scss */
+  .desk-three-quarters, .desk-six-eighths, .desk-nine-twelfths {
+    width: 75%;
+  }
+
+  /**
+  * Fifths
+  */
+  /* line 44, ../sass/generic/_widths.scss */
+  .desk-one-fifth, .desk-two-tenths {
+    width: 20%;
+  }
+
+  /* line 45, ../sass/generic/_widths.scss */
+  .desk-two-fifths, .desk-four-tenths {
+    width: 40%;
+  }
+
+  /* line 46, ../sass/generic/_widths.scss */
+  .desk-three-fifths, .desk-six-tenths {
+    width: 60%;
+  }
+
+  /* line 47, ../sass/generic/_widths.scss */
+  .desk-four-fifths, .desk-eight-tenths {
+    width: 80%;
+  }
+
+  /**
+  * Sixths
+  */
+  /* line 53, ../sass/generic/_widths.scss */
+  .desk-one-sixth, .desk-two-twelfths {
+    width: 16.666%;
+  }
+
+  /* line 57, ../sass/generic/_widths.scss */
+  .desk-five-sixths, .desk-ten-twelfths {
+    width: 83.333%;
+  }
+
+  /**
+  * Eighths
+  */
+  /* line 63, ../sass/generic/_widths.scss */
+  .desk-one-eighth {
+    width: 12.5%;
+  }
+
+  /* line 65, ../sass/generic/_widths.scss */
+  .desk-three-eighths {
+    width: 37.5%;
+  }
+
+  /* line 67, ../sass/generic/_widths.scss */
+  .desk-five-eighths {
+    width: 62.5%;
+  }
+
+  /* line 69, ../sass/generic/_widths.scss */
+  .desk-seven-eighths {
+    width: 87.5%;
+  }
+
+  /**
+  * Tenths
+  */
+  /* line 75, ../sass/generic/_widths.scss */
+  .desk-one-tenth {
+    width: 10%;
+  }
+
+  /* line 77, ../sass/generic/_widths.scss */
+  .desk-three-tenths {
+    width: 30%;
+  }
+
+  /* line 81, ../sass/generic/_widths.scss */
+  .desk-seven-tenths {
+    width: 70%;
+  }
+
+  /* line 83, ../sass/generic/_widths.scss */
+  .desk-nine-tenths {
+    width: 90%;
+  }
+
+  /**
+  * Twelfths
+  */
+  /* line 89, ../sass/generic/_widths.scss */
+  .desk-one-twelfth {
+    width: 8.333%;
+  }
+
+  /* line 93, ../sass/generic/_widths.scss */
+  .desk-five-twelfths {
+    width: 41.666%;
+  }
+
+  /* line 95, ../sass/generic/_widths.scss */
+  .desk-seven-twelfths {
+    width: 58.333%;
+  }
+
+  /* line 99, ../sass/generic/_widths.scss */
+  .desk-eleven-twelfths {
+    width: 91.666%;
+  }
+}
+/* endif */

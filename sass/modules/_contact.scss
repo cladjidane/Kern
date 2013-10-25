@@ -8,8 +8,7 @@
  */
 
 .contact {
-	padding: 20px 0 10px 30px;
-	width: 320px; 
+
 }
 
 .contact-txt {
@@ -31,8 +30,8 @@
 			margin-top: 1px; 
 			
 			&:first-child {		
-				$icons: sprite-map("icons/*.png");
-				background-position: sprite-position($icons, marker, 0, 10px);
+				//$icons: sprite-map("icons/*.png");
+				//background-position: sprite-position($icons, marker, 0, 10px);
 			}
 		} 
 	}
@@ -43,21 +42,32 @@
 .contact-form {
 	color: white;
 
-	> h3 {
-		margin-bottom: 10px; 
+	.contact__label {
+		display: none;
 	}
 
-	input {
+	.contact__field-txt {
+		background: lighten($color-f, 30%);
+		border: 1px solid lighten($color-g, 50%);
+		padding: 5px 5px 5px 10px;
 		width: 100%; 
 	}
 
-	textarea {
-		width: 100%; 
-	} 
+	.contact__field-txt--area {
+		margin: 0; 
+	}
 
-	button {
+	.contact__submit {
+		@include icons-sprite(check-white);
+				
+		background-position: sprite-position($icons, check-white, 15px, 5px);
+		background-color: $color-d;
 		border: none;
-		margin-top: 10px; 
-		padding: 10px 20px; 
+		color: white;
+		padding: 10px 20px 10px 50px; 
+	}
+
+	.contact__error, .contact__success {
+		display: none;
 	}
 }

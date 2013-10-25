@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    Main
+\*------------------------------------*/
+/**
+ * Main : Définition d'ensemble
+ * 
+ */
+
+
+/**
+ * 1. Orientation iOS font-size fix
+ */
+html {
+  font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
+  overflow-y:scroll;
+  min-height:100%;
+
+	@media (orientation: landscape) and (max-device-width: 768px) {
+		-webkit-text-size-adjust: 100%; /* 1 */
+	}
+}
