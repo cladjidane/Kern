@@ -26,7 +26,10 @@
  * utiles au projet en cours
  * 
  */
-/* Color */
+/**
+ * Color 
+ * Voir les Guide line pour les correspondances /sg/
+ */
 /* Fonts */
 @font-face {
   font-family: "umbrage";
@@ -1311,15 +1314,44 @@ html {
  * Body : Corps de la page
  * 
  */
-/* line 13, ../sass/areas/_body.scss */
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
+/* line 9, ../sass/areas/_body.scss */
+body {
+  background: #b5e655;
 }
-/* line 17, ../sass/areas/_body.scss */
+
+/* line 14, ../sass/areas/_body.scss */
+.container {
+  position: relative;
+  z-index: 10;
+}
+/* line 18, ../sass/areas/_body.scss */
 .container > section {
-  background: silver;
-  margin-bottom: 20px;
+  height: 100%;
+  padding-top: 100px;
+  width: 100%;
+}
+/* line 24, ../sass/areas/_body.scss */
+.container #produits {
+  background: #96ca2d;
+}
+/* line 28, ../sass/areas/_body.scss */
+.container #accueil {
+  background: #4bb5c1;
+}
+/* line 32, ../sass/areas/_body.scss */
+.container #groupement {
+  background: #e4dfc1;
+}
+/* line 36, ../sass/areas/_body.scss */
+.container #contact {
+  background: #a00d58;
+}
+
+/* line 42, ../sass/areas/_body.scss */
+.page-container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-top: 100px;
 }
 
 /*------------------------------------*\
@@ -1329,6 +1361,25 @@ html {
  * Header : zones d'entête
  * 
  */
+/* line 9, ../sass/areas/_header.scss */
+.header {
+  background: white;
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+/* line 17, ../sass/areas/_header.scss */
+.logo {
+  float: left;
+}
+
+/* line 21, ../sass/areas/_header.scss */
+.mainmenu {
+  float: right;
+}
+
 /*------------------------------------*\
     main
 \*------------------------------------*/

@@ -7,15 +7,40 @@
  */
 
 body {
-	
+	background: $color-a-light;
 }
 
+// HOME
 .container {
-	max-width: 1024px;
-	margin: 0 auto;
+	position: relative;
+	z-index: 10;
 
 	& > section {
-		background: silver;
-		margin-bottom: 20px;
+		height: 100%;
+		padding-top: 100px;
+		width: 100%;
 	}
+
+	#produits {
+		background: $color-a;
+	}
+
+	#accueil {
+		background:  $color-b;
+	}
+
+	#groupement {
+		background:  $color-c;
+	}
+
+	#contact {
+		background:  $color-d;
+	}
+}
+
+// page
+.page-container {
+	margin: 0 auto;
+	max-width: 1240px;
+	padding-top: 100px;
 }

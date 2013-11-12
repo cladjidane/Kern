@@ -17,17 +17,16 @@
 	</head>
 	<body>
 
-		<header class="grid">
-			<h1 class="grid__item one-eighth">
+		<header class="header">
+			<h1 class="logo">
 				BIOBREIZH
-			</h1><!--
-
-			--><nav class="grid__item seven-eighths">
+			</h1>
+			<nav class="mainmenu">
 		    <ul class="nav nav-mainmenu">
-			    <li class="nav-mainmenu__item"><a href="#">Accueil</a></li>
-			    <li class="nav-mainmenu__item"><a href="#">Le groupement</a></li>
-			    <li class="nav-mainmenu__item"><a href="#">Les produits</a></li>
-			    <li class="nav-mainmenu__item"><a href="#">Contact</a></li>
+			    <li class="nav-mainmenu__item"><a class="nav-button" href="#accueil">Accueil</a></li>
+			    <li class="nav-mainmenu__item"><a class="nav-button" href="#groupement">Le groupement</a></li>
+			    <li class="nav-mainmenu__item"><a class="nav-button" href="#produits">Les produits</a></li>
+			    <li class="nav-mainmenu__item"><a class="nav-button" href="#contact">Contact</a></li>
 			  </ul>
 			</nav>
 		</header>
@@ -35,7 +34,7 @@
 		<div class="container">
 			
 			<!-- PRODUITS -->
-			<section class="grid">
+			<section class="ecran" id="produits">
 				<aside class="grid__item one-third  aside-infos aside-infos--bx">
 					<h2 class="aside-infos__title">Acualités BIO</h2>
 
@@ -134,7 +133,7 @@
 			</section>
 			
 			<!-- ACCUEIL -->			
-			<section class="grid">
+			<section class="ecran" id="accueil">
 				<aside class="grid__item one-third  aside-infos aside-infos--bx">
 					<h2 class="aside-infos__title">Acualités BIO</h2>
 
@@ -232,7 +231,7 @@
 			</section>
 			
 			<!-- LE GROUPEMENT -->
-			<section class="grid">
+			<section class="ecran" id="groupement">
 				<aside class="grid__item one-third  aside-infos aside-infos--bx">
 					<h2 class="aside-infos__title">Acualités BIO</h2>
 
@@ -301,7 +300,7 @@
 			</section>
 			
 			<!-- CONTACT -->
-			<section class="grid">
+			<section class="ecran" id="contact">
 				<aside class="grid__item one-third  aside-infos aside-infos--bx">
 					<h2 class="aside-infos__title">Acualités BIO</h2>
 
@@ -365,8 +364,7 @@
 			</section>
 		</div>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery-min.js"></script>
     <script src="js/plugin.js"></script>
     <script src="js/main.js"></script>
 

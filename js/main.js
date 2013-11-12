@@ -1,5 +1,17 @@
 // Using the module pattern for a jQuery feature
 $(document).ready(function() {
+
+	var vp = $(window).height();
+	$('.ecran').height(vp-100);
+
+	$('.nav-button').on('click', function(e){
+		e.preventDefault();
+
+		$that = $(this);
+		$.scrollTo($that.attr('href'), 400);
+	});
+
+
 	/*
 	var feature = (function() {
 		

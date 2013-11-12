@@ -7,5 +7,17 @@
  */
 
 .header {
-	
+	background: white;
+	min-height: 100px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.logo {
+	float: left;
+}
+
+.mainmenu {
+	float: right;
 }

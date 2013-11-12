@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.2" type="template" client="site">
+	<name>biobreizh</name>
+	<version>1.0</version>
+	<creationDate>12/11/2013</creationDate>
+	<author>Kyle Ledbetter</author>
+	<authorEmail>contact@fabiencanu.fr</authorEmail>
+	<copyright>Copyright (C) 2013 - Fabien canu</copyright>
+	<description>TPL_BIOBREIZH_XML_DESCRIPTION</description>
+	<files>
+		<filename>index.html.</filename>
+		<filename>page.html</filename>
+		<filename>config.rb</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>sass</folder>
+		<folder>sg</folder>
+	</files>
+	<positions>
+		<position>home-ecran1-left</position>
+		<position>home-ecran1-center</position>
+		<position>home-ecran1-right</position>
+		<position>home-ecran2-left</position>
+		<position>home-ecran2-center</position>
+		<position>home-ecran2-right</position>
+		<position>home-ecran3-left</position>
+		<position>home-ecran3-center</position>
+		<position>home-ecran3-right</position>
+		<position>home-ecran4-left</position>
+		<position>home-ecran4-center</position>
+		<position>home-ecran4-right</position>
+		<position>debug</position>
+		<position>page-aside</position>
+		<position>page-footer</position>
+	</positions>
+</extension>
