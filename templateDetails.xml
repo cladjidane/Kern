@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
-<extension version="3.2" type="template" client="site">
-	<name>biobreizh</name>
+<extension version="3" type="template" client="site">
+	<name>Biobreizh Page</name>
 	<version>1.0</version>
 	<creationDate>12/11/2013</creationDate>
-	<author>Kyle Ledbetter</author>
+	<author>Fabien CANU</author>
 	<authorEmail>contact@fabiencanu.fr</authorEmail>
 	<copyright>Copyright (C) 2013 - Fabien canu</copyright>
-	<description>TPL_BIOBREIZH_XML_DESCRIPTION</description>
+	<description>Template des pages de contenus du site Biobreizh 2014</description>
 	<files>
-		<filename>index.html.</filename>
+		<filename>index.html</filename>
 		<filename>page.html</filename>
 		<filename>config.rb</filename>
 		<filename>component.php</filename>
@@ -43,4 +43,6 @@
 		<position>page-aside</position>
 		<position>page-footer</position>
 	</positions>
+	<config>
+	</config>
 </extension>
