@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'icons-sprite'.
-        on line 94 of /var/www/clients/client8/web86/web/templates/biobreizhpage/sass/plugins/bxslider.scss, in `icons-sprite'
-        from line 94 of /var/www/clients/client8/web86/web/templates/biobreizhpage/sass/plugins/bxslider.scss
+        on line 94 of /var/www/clients/client8/web86/web/templates/biobreizhhome/sass/plugins/bxslider.scss, in `icons-sprite'
+        from line 94 of /var/www/clients/client8/web86/web/templates/biobreizhhome/sass/plugins/bxslider.scss
 
 Backtrace:
-/var/www/clients/client8/web86/web/templates/biobreizhpage/sass/plugins/bxslider.scss:94:in `icons-sprite'
-/var/www/clients/client8/web86/web/templates/biobreizhpage/sass/plugins/bxslider.scss:94
+/var/www/clients/client8/web86/web/templates/biobreizhhome/sass/plugins/bxslider.scss:94:in `icons-sprite'
+/var/www/clients/client8/web86/web/templates/biobreizhhome/sass/plugins/bxslider.scss:94
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -59,4 +59,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'icons-sprite'.\A         on line 94 of /var/www/clients/client8/web86/web/templates/biobreizhpage/sass/plugins/bxslider.scss, in `icons-sprite'\A         from line 94 of /var/www/clients/client8/web86/web/templates/biobreizhpage/sass/plugins/bxslider.scss"; }
+  content: "Syntax error: Undefined mixin 'icons-sprite'.\A         on line 94 of /var/www/clients/client8/web86/web/templates/biobreizhhome/sass/plugins/bxslider.scss, in `icons-sprite'\A         from line 94 of /var/www/clients/client8/web86/web/templates/biobreizhhome/sass/plugins/bxslider.scss"; }

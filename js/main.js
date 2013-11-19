@@ -1,16 +1,19 @@
 // Using the module pattern for a jQuery feature
 $(document).ready(function() {
 
+	$.scrollTo('#accueil', 400);
+
 	var vp = $(window).height();
 	$('.ecran').height(vp-100);
 
-	$('.nav-button').on('click', function(e){
-		e.preventDefault();
-
-		$that = $(this);
-		$.scrollTo($that.attr('href'), 400);
-	});
-
+	if($('body').data('home')) {
+		$('.nav-button').on('click', function(e){
+			$that = $(this);
+			if($that.data('noscroll')) return true;
+			e.preventDefault();
+			$.scrollTo($that.attr('href').replace('/', ''), 400);
+		});
+	}
 
 	/*
 	var feature = (function() {

@@ -1348,6 +1348,13 @@ body {
 }
 
 /* line 42, ../sass/areas/_body.scss */
+.container-ecran {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-top: 100px;
+}
+
+/* line 49, ../sass/areas/_body.scss */
 .page-container, .page-footer {
   margin: 0 auto;
   max-width: 1240px;

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3" type="template" client="site">
-	<name>Biobreizh Page</name>
+	<name>Biobreizh Home</name>
 	<version>1.0</version>
 	<creationDate>12/11/2013</creationDate>
 	<author>Fabien CANU</author>
 	<authorEmail>contact@fabiencanu.fr</authorEmail>
 	<copyright>Copyright (C) 2013 - Fabien canu</copyright>
-	<description>Template des pages de contenus du site Biobreizh 2014</description>
+	<description>Template de la page d'accueil du site Biobreizh 2014</description>
 	<files>
 		<filename>index.html</filename>
 		<filename>page.html</filename>
@@ -40,9 +40,6 @@
 		<position>home-ecran4-center</position>
 		<position>home-ecran4-right</position>
 		<position>debug</position>
-		<position>page-aside</position>
-		<position>page-aside--custom</position>
-		<position>page-footer</position>
 	</positions>
 	<config>
 	</config>

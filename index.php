@@ -15,7 +15,7 @@
 	<![endif]-->
 		<link rel="stylesheet" href="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/css/kern.css" type="text/css">
 	</head>
-	<body>
+	<body data-home="true">
 
 		<header class="header">
 			<h1 class="logo">
@@ -24,85 +24,352 @@
 			<nav class="mainmenu">
 		    <ul class="nav nav-mainmenu">
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#accueil">Accueil</a></li>
-			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#groupement">Le groupement</a></li>
+			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#groupement">Le groupement</a></li>	
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#produits">Les produits</a></li>
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#contact">Contact</a></li>
+			    <li class="nav-mainmenu__item"><a class="nav-button" data-noscroll="true" href="http://bb.fabiencanu.fr/index.php/tmp-1">TMP</a></li>
 			  </ul>
 			</nav>
 		</header>
 
-		<div class="page-container">
+		<div class="container">
 			
-			<aside class="grid__item one-quarter">
-				<jdoc:include type="modules" name="page-aside--custom" style="bb" />				
-			</aside><!--
-			
-			--><section class="grid__item three-quarters content">
-				
-				<jdoc:include type="message" />
-				<jdoc:include type="component" />
-				
-			</section>
+			<!-- PRODUITS -->
+			<section class="ecran" id="produits">
+				<div class="container-ecran">
+					<aside class="grid__item one-third  aside-infos aside-infos--bx">
+						<h2 class="aside-infos__title">Les fiches recettes</h2>
 
-		</div>
+						<ul class="bxslider slider-recette">
+						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						</ul>
+						
+						<h3>La recette du jour</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
+						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
+					</aside><!--
 
-		<footer class="page-footer">
-			<div class="grid grid--right">
-				<div id="contact-form" class="grid__item three-eighths contact contact-form">
-			    <h1 class="contact__tile">Contactez-nous</h1>
-			    
-			    <ul class="contact__error" id="errors">
-			        <li id="info" class="contact__error-item">There were some problems with your form submission:</li>
-			    </ul>
-			    
-			    <p class="contact__success" id="success">Thanks for your message! We will get back to you ASAP!</p>
-			    
-			    <form class="contact__form" method="post" action="process.php">
-			        <p>
-			            <label class="contact__label" for="name">Name: <span class="required">*</span></label>
-			            <input class="contact__field-txt" type="text" id="name" name="name" value="" placeholder="Votre nom" required="required" autofocus="autofocus" />
-			        </p>
-			        <p>
-			            <label class="contact__label" for="email">Email Address: <span class="required">*</span></label>
-			            <input class="contact__field-txt" type="email" id="email" name="email" value="" placeholder="Votre email" required="required" />
-			        </p>
+					--><article class="grid__item one-third  article">
+						<header class="article__header">
+							<h1>Hello World</h1>
+						</header>
 
-			        <P>
-			            <label class="contact__label" for="message">Message: <span class="required">*</span></label>
-			            <textarea class="contact__field-txt contact__field-txt--area" id="message" name="message" placeholder="Votre message" required="required" data-minlength="20"></textarea>
-			        </p>
+						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</article><!--
 
-			        <p>
-			            <input class="contact__submit" type="submit" value="Envoyer" id="submit-button" />
-			        </p>
+					--><div class="grid__item one-third  mozaic gamme">
+						<ul class="mozaic__layout mozaic-pagination">
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+						</ul>
 
-			        <!--
-			        <label class="contact__label" for="telephone">Telephone: </label>
-			        <input class="contact__field-txt" type="tel" id="telephone" name="telephone" value="" />
-			        
-			        <label class="contact__label" for="enquiry">Enquiry: </label>
-			        <select class="contact__field-select" id="enquiry" name="enquiry">
-			            <option value="general">General</option>
-			            <option value="sales">Sales</option>
-			            <option value="support">Support</option>
-			        </select>
-			        -->
-
-			    </form>
+					</div>
 				</div>
-				<section class="grid__item three-eighths">
-					<h3>APFLBB</h3>
-					<ul>
-						<li>7 rue Bideford<br />29400 LANDIVISIAU</li>
-						<li></li>
-						<li>Tél : 02 98 63 17 93</li>
-						<li>Tél : 02 98 63 17 93</li>
-						<li>Tél : 02 98 63 17 93</li>
-						<li><a href="mailto:">contact@biobreizh.org</a></li>
-					</ul>
-				</section>
-			</div>
-		</footer>
+			</section>
+			
+			<!-- ACCUEIL -->			
+			<section class="ecran" id="accueil">
+				<div class="container-ecran">
+					<aside class="grid__item one-third  aside-infos aside-infos--bx">
+						<h2 class="aside-infos__title">Acualités BIO</h2>
+
+						<ul class="bxslider slider-recette">
+						  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						</ul>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
+						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
+					</aside><!--
+
+					--><article class="grid__item one-third  article">
+						<header class="article__header">
+							<h1>Hello World</h1>
+						</header>
+
+						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</article><!--
+
+					--><div class="grid__item one-third  mozaic">
+						<ul class="mozaic__layout mozaic-pagination">
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+			<!-- LE GROUPEMENT -->
+			<section class="ecran" id="groupement">
+				<div class="container-ecran">
+					<aside class="grid__item one-third  aside-infos aside-infos--bx">
+						<h2 class="aside-infos__title">Acualités BIO</h2>
+
+						<ul class="bxslider slider-recette">
+						  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						</ul>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
+						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
+					</aside><!--
+
+					--><article class="grid__item one-third  article">
+						<header class="article__header">
+							<h1>Hello World</h1>
+						</header>
+
+						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</article><!--
+
+					--><div class="grid__item one-third  mozaic">
+						<ul class="mozaic__layout mozaic-pagination">
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/th-poder.png" alt="">
+									<div class="mozaic__item-desc"><span>texte</span></div>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</section>
+			
+			<!-- CONTACT -->
+			<section class="ecran" id="contact">
+				<div class="container-ecran">
+					<aside class="grid__item one-third  aside-infos aside-infos--bx">
+						<h2 class="aside-infos__title">Acualités BIO</h2>
+
+						<ul class="bxslider slider-recette">
+						  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
+						</ul>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
+						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
+					</aside><!--
+
+					--><article class="grid__item one-third  article">
+						<header class="article__header">
+							<h1>Hello World</h1>
+						</header>
+
+						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</article><!--
+
+					--><div class="grid__item one-third  mozaic">
+					<h1>L'équipe</h1>
+						<ul class="mozaic__layout mozaic-pagination">
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/yoann-morin.png" alt="">
+									<div class="mozaic__item-desc"><span>Yoann Morin</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/tiefen-lebros.png" alt="">
+									<div class="mozaic__item-desc"><span>Tiefen lebros</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/eric-sire.png" alt="">
+									<div class="mozaic__item-desc"><span>eric-sire</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/dominique-dyupaty.png" alt="">
+									<div class="mozaic__item-desc"><span>Dominique <br />Duapaty</span></div>
+								</a>
+							</li>
+							<li class="mozaic__item">
+								<a href="">
+									<img src="img/annabelle-cras.png" alt="">
+									<div class="mozaic__item-desc"><span>Annabelle <br />cras</span></div>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</section>
+		</div>
 
 		<script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/vendor/jquery-min.js"></script>
     <script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/plugin.js"></script>
