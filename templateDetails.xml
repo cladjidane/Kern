@@ -41,6 +41,7 @@
 		<position>home-ecran4-right</position>
 		<position>debug</position>
 		<position>page-aside</position>
+		<position>page-aside--custom</position>
 		<position>page-footer</position>
 	</positions>
 	<config>

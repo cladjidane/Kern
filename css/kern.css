@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 /*------------------------------------*\
     kern.scss
 \*------------------------------------*/
@@ -33,67 +33,67 @@
 /* Fonts */
 @font-face {
   font-family: "umbrage";
-  src: url('/_integrations/_biobreizh/css/fonts/Umbrage/umbrage.ttf') format('truetype');
+  src: url('fonts/Umbrage/umbrage.ttf') format('truetype');
 }
 
 /* alternate font-sizing */
 /* sprite */
 /* line 138, icons/*.png */
 .icons-sprite, .icons-arrow-next, .icons-arrow-prev, .icons-arrow-readmore-blue, .icons-check-white, .icons-ic-plus, .icons-livre, .icons-plus-active, .icons-sep-menu, .icons-sheet-green-r, .icons-sheet-white-l, .icons-sheet-white-r, .aside-infos .aside-infos__title, .aside-infos .aside-infos__readmore a, .contact-form .contact__submit, .nav-mainmenu > li, .mozaic .mozaic__title, .bx-wrapper .bx-prev, .bx-wrapper .bx-next {
-  background: url('/_integrations/_biobreizh/img/icons-s3e33f63e07.png') no-repeat;
+  background: url('../img/icons-s3e33f63e07.png') no-repeat;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-arrow-next {
   background-position: 0 -347px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-arrow-prev {
   background-position: 0 -227px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-arrow-readmore-blue {
   background-position: 0 -661px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-check-white {
   background-position: 0 -553px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-ic-plus {
   background-position: 0 -60px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-livre {
   background-position: 0 -501px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-plus-active {
   background-position: 0 0;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-sep-menu {
   background-position: 0 -601px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-sheet-green-r {
   background-position: 0 -407px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-sheet-white-l {
   background-position: 0 -454px;
 }
 
-/* line 60, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-sheet-white-r {
   background-position: 0 -120px;
 }
@@ -786,7 +786,7 @@ textarea:focus {
     width: 1px !important;
   }
 }
-/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1228,7 +1228,7 @@ caption, figure {
 
 /* line 37, ../sass/generic/_typos.scss */
 h1, .h1-like {
-  margin: 1.05em 0 0 0;
+  margin: 1.5em 0 1em 0;
   font-family: umbrage;
   font-size: 20px;
   font-size: 1.25rem;
@@ -1237,7 +1237,7 @@ h1, .h1-like {
 
 /* line 37, ../sass/generic/_typos.scss */
 h2, .h2-like {
-  margin: 1.16667em 0 0 0;
+  margin: 1.66667em 0 1.11111em 0;
   font-family: umbrage;
   font-size: 18px;
   font-size: 1.125rem;
@@ -1246,7 +1246,7 @@ h2, .h2-like {
 
 /* line 37, ../sass/generic/_typos.scss */
 h3, .h3-like {
-  margin: 1.3125em 0 0 0;
+  margin: 1.875em 0 1.25em 0;
   font-family: umbrage;
   font-size: 16px;
   font-size: 1rem;
@@ -1255,7 +1255,7 @@ h3, .h3-like {
 
 /* line 37, ../sass/generic/_typos.scss */
 h4, .h4-like {
-  margin: 1.5em 0 0 0;
+  margin: 2.14286em 0 1.42857em 0;
   font-family: umbrage;
   font-size: 14px;
   font-size: 0.875rem;
@@ -1264,7 +1264,7 @@ h4, .h4-like {
 
 /* line 37, ../sass/generic/_typos.scss */
 h5, .h5-like {
-  margin: 1.75em 0 0 0;
+  margin: 2.5em 0 1.66667em 0;
   font-family: umbrage;
   font-size: 12px;
   font-size: 0.75rem;
@@ -1273,7 +1273,7 @@ h5, .h5-like {
 
 /* line 37, ../sass/generic/_typos.scss */
 h6, .h6-like {
-  margin: 1.75em 0 0 0;
+  margin: 2.5em 0 1.66667em 0;
   font-family: umbrage;
   font-size: 12px;
   font-size: 0.75rem;
@@ -1348,7 +1348,7 @@ body {
 }
 
 /* line 42, ../sass/areas/_body.scss */
-.page-container {
+.page-container, .page-footer {
   margin: 0 auto;
   max-width: 1240px;
   padding-top: 100px;
@@ -1403,25 +1403,14 @@ body {
  */
 /* line 9, ../sass/areas/_content.scss */
 .content {
-  position: relative;
-  width: 640px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+/* line 13, ../sass/areas/_content.scss */
+.content > article {
+  background: #edf7f2;
 }
 
-/*------------------------------------*\
-    article
-\*------------------------------------*/
-/**
- * Article : Mise en forme d'un article / billet
- * Gestion des titres / chapeau / encart ...
- * 
- */
-/*------------------------------------*\
-    header
-\*------------------------------------*/
-/**
- * Header : zones d'entête
- * 
- */
 /*------------------------------------*\
     sidebar
 \*------------------------------------*/
@@ -1501,14 +1490,14 @@ body {
   left: 32px;
   top: 40px;
 }
-/* line 37, ../sass/modules/_aside-infos.scss */
+/* line 33, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__readmore {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333;
   text-align: right;
 }
-/* line 41, ../sass/modules/_aside-infos.scss */
+/* line 37, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__readmore a {
   background-position: 0 -661px;
   background-position: 0 -656px;
@@ -1519,18 +1508,46 @@ body {
 }
 
 /**
+ * For aside page
+ */
+/* line 56, ../sass/modules/_aside-infos.scss */
+.aside-infos--mod .aside-infos__title {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.84615;
+  background-position: 100% -106px;
+  line-height: 50px;
+  padding-left: 0;
+  padding-right: 45px;
+}
+/* line 59, ../sass/modules/_aside-infos.scss */
+.aside-infos--mod .aside-infos__title:before {
+  border: none;
+}
+/* line 63, ../sass/modules/_aside-infos.scss */
+.aside-infos--mod .aside-infos__title:after {
+  border-bottom: 1px dotted white;
+  content: " ";
+  width: 89%;
+  padding-left: 24px;
+  position: absolute;
+  right: 32px;
+  top: 40px;
+}
+
+/**
  * With BX-slider
  */
-/* line 59, ../sass/modules/_aside-infos.scss */
+/* line 85, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette {
   margin: 0;
   padding: 0;
 }
-/* line 63, ../sass/modules/_aside-infos.scss */
+/* line 89, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__layout-item {
   position: relative;
 }
-/* line 67, ../sass/modules/_aside-infos.scss */
+/* line 93, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__item-txt {
   background-color: rgba(255, 255, 255, 0.75);
   bottom: 0;
@@ -1617,19 +1634,29 @@ body {
  */
 /* line 14, ../sass/modules/_article.scss */
 .article {
-  padding: 20px;
+  color: #73a411;
+  padding: 20px 40px 40px;
 }
-/* line 17, ../sass/modules/_article.scss */
+/* line 18, ../sass/modules/_article.scss */
 .article a {
   text-decoration: none;
+  color: #0c8c9b;
 }
-/* line 21, ../sass/modules/_article.scss */
+/* line 23, ../sass/modules/_article.scss */
 .article ul {
   margin-left: 40px;
 }
-/* line 31, ../sass/modules/_article.scss */
+/* line 28, ../sass/modules/_article.scss */
+.article .article__header h1 {
+  color: #73a411;
+}
+/* line 33, ../sass/modules/_article.scss */
 .article .article__chapo {
   font-weight: bold;
+}
+/* line 37, ../sass/modules/_article.scss */
+.article h2 {
+  color: #0c8c9b;
 }
 
 /*------------------------------------*\
@@ -1918,6 +1945,18 @@ body {
   width: 100%;
   padding-left: 24px;
   vertical-align: top;
+}
+
+/**
+ * Align the entire grid to the right. Extends `.grid`.
+ */
+/* line 70, ../sass/modules/_grids.scss */
+.grid--right {
+  text-align: right;
+}
+/* line 73, ../sass/modules/_grids.scss */
+.grid--right > .grid__item {
+  text-align: left;
 }
 
 /**

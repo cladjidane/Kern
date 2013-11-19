@@ -47,4 +47,11 @@ function modChrome_well($module, &$params, &$attribs)
 		echo "</div>";
 	}
 }
+
+function modChrome_bb($module, &$params, &$attribs) {
+	echo '<div class="aside-infos aside-infos--mod">
+					<h2 class="aside-infos__title">' . $module->title . '</h2>
+					' . $module->content . '
+				</div>';
+}
 ?>

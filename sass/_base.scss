@@ -12,15 +12,16 @@
  * Color 
  * Voir les Guide line pour les correspondances /sg/
  */
-$color-a : #96ca2d; // vert foncé
-$color-a-light : #b5e655; // vert clair
-$color-b : #4bb5c1; // bleu
-$color-c : #e4dfc1; // beige
-$color-d : #a00d58; // occre
-$color-e : #bba276; // brun
-$color-f : #edf7f2; // faux blanc
-$color-g : #0c8c9b; // turquoise
-$color-h : #edf7f2;
+$color-a-dark				: #73a411; // vert très foncé
+$color-a 						: #96ca2d; // vert foncé
+$color-a-light 			: #b5e655; // vert clair
+$color-b 						: #4bb5c1; // bleu
+$color-c 						: #e4dfc1; // beige
+$color-d 						: #a00d58; // occre
+$color-e 						: #bba276; // brun
+$color-f 						: #edf7f2; // faux blanc
+$color-g 						: #0c8c9b; // turquoise
+$color-h 						: #edf7f2;
 
 /* Fonts */
 @include font-face("umbrage", font-files("Umbrage/umbrage.ttf")); 

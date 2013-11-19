@@ -6,7 +6,11 @@
  * 
  */
 
-.content {	
-	position: relative;
-	width: 640px;
-}
+.content  {
+ 	margin-bottom: 80px; 
+ 	margin-top: 80px; 
+
+ 	& > article {
+ 		background: $color-f;
+ 	} 
+} 

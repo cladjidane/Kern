@@ -13,7 +13,7 @@
 		<meta name="viewport" content="initial-scale=1.0"><!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-		<link rel="stylesheet" href="css/kern.css" type="text/css">
+		<link rel="stylesheet" href="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/css/kern.css" type="text/css">
 	</head>
 	<body>
 
@@ -33,52 +33,80 @@
 
 		<div class="page-container">
 			
-			<aside class="grid__item one-third">
-				<div class="aside-infos aside-infos--bx">
-					<h2 class="aside-infos__title">Acualités BIO</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
-					<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
-				</div>
-
-				<div class="aside-infos aside-infos--bx">
-					<h2 class="aside-infos__title">Acualités BIO</h2>
-
-					<ul class="bxslider slider-recette">
-					  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-					  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-					  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-					  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-					  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-					</ul>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
-					<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
-				</div>
-				
+			<aside class="grid__item one-quarter">
+				<jdoc:include type="modules" name="page-aside--custom" style="bb" />				
 			</aside><!--
 			
-			--><section class="grid__item two-thirds  article">
+			--><section class="grid__item three-quarters content">
 				
 				<jdoc:include type="message" />
 				<jdoc:include type="component" />
 				
-				<header class="article__header">
-					<h1>Hello World</h1>
-				</header>
-
-				<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</section>
 
 		</div>
 
-		<footer>
-			<form action=""></form>
-			<section></section>
+		<footer class="page-footer">
+			<div class="grid grid--right">
+				<div id="contact-form" class="grid__item three-eighths contact contact-form">
+			    <h1 class="contact__tile">Contactez-nous</h1>
+			    
+			    <ul class="contact__error" id="errors">
+			        <li id="info" class="contact__error-item">There were some problems with your form submission:</li>
+			    </ul>
+			    
+			    <p class="contact__success" id="success">Thanks for your message! We will get back to you ASAP!</p>
+			    
+			    <form class="contact__form" method="post" action="process.php">
+			        <p>
+			            <label class="contact__label" for="name">Name: <span class="required">*</span></label>
+			            <input class="contact__field-txt" type="text" id="name" name="name" value="" placeholder="Votre nom" required="required" autofocus="autofocus" />
+			        </p>
+			        <p>
+			            <label class="contact__label" for="email">Email Address: <span class="required">*</span></label>
+			            <input class="contact__field-txt" type="email" id="email" name="email" value="" placeholder="Votre email" required="required" />
+			        </p>
+
+			        <P>
+			            <label class="contact__label" for="message">Message: <span class="required">*</span></label>
+			            <textarea class="contact__field-txt contact__field-txt--area" id="message" name="message" placeholder="Votre message" required="required" data-minlength="20"></textarea>
+			        </p>
+
+			        <p>
+			            <input class="contact__submit" type="submit" value="Envoyer" id="submit-button" />
+			        </p>
+
+			        <!--
+			        <label class="contact__label" for="telephone">Telephone: </label>
+			        <input class="contact__field-txt" type="tel" id="telephone" name="telephone" value="" />
+			        
+			        <label class="contact__label" for="enquiry">Enquiry: </label>
+			        <select class="contact__field-select" id="enquiry" name="enquiry">
+			            <option value="general">General</option>
+			            <option value="sales">Sales</option>
+			            <option value="support">Support</option>
+			        </select>
+			        -->
+
+			    </form>
+				</div>
+				<section class="grid__item three-eighths">
+					<h3>APFLBB</h3>
+					<ul>
+						<li>7 rue Bideford<br />29400 LANDIVISIAU</li>
+						<li></li>
+						<li>Tél : 02 98 63 17 93</li>
+						<li>Tél : 02 98 63 17 93</li>
+						<li>Tél : 02 98 63 17 93</li>
+						<li><a href="mailto:">contact@biobreizh.org</a></li>
+					</ul>
+				</section>
+			</div>
 		</footer>
 
-		<script src="js/vendor/jquery-min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/main.js"></script>
+		<script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/vendor/jquery-min.js"></script>
+    <script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/plugin.js"></script>
+    <script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

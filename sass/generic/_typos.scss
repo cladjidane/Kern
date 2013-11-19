@@ -35,7 +35,7 @@ $headings-size: $h1-size $h2-size $h3-size $h4-size $h5-size $h6-size;
   $visual      : nth($headings-size, $i);
   
   #{$selector} {
-    margin: 21px / $visual * 1em (0) (0) (0);
+    margin: 30px / $visual * 1em (0) (20px / $visual * 1em) (0);
     font-family: $hn-font-family;
     @include font-size($visual);
   }
