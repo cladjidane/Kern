@@ -13,7 +13,7 @@
 		<meta name="viewport" content="initial-scale=1.0"><!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-		<link rel="stylesheet" href="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/css/kern.css" type="text/css">
+		<link rel="stylesheet" href="/templates/biobreizhhome/css/kern.css" type="text/css">
 	</head>
 	<body>
 
@@ -104,9 +104,9 @@
 			</div>
 		</footer>
 
-		<script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/vendor/jquery-min.js"></script>
-    <script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/plugin.js"></script>
-    <script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/main.js"></script>
+		<script src="/templates/biobreizhhome/js/vendor/jquery-min.js"></script>
+    <script src="/templates/biobreizhhome/js/plugin.js"></script>
+    <script src="/templates/biobreizhhome/js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
