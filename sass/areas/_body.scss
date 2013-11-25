@@ -22,11 +22,11 @@ body {
 	}
 
 	#produits {
-		background: $color-a;
+		background: $color-b;
 	}
 
 	#accueil {
-		background:  $color-b;
+		background:  $color-a;
 	}
 
 	#groupement {
@@ -35,6 +35,10 @@ body {
 
 	#contact {
 		background:  $color-d;
+	}
+
+	.gamme {
+		background: $color-g;
 	}
 }
 

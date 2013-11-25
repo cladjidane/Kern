@@ -15,19 +15,20 @@
 	<![endif]-->
 		<link rel="stylesheet" href="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/css/kern.css" type="text/css">
 	</head>
-	<body data-home="true">
+	<body class="home" data-home="true">
 
 		<header class="header">
-			<h1 class="logo">
-				BIOBREIZH
-			</h1>
+			<div class="logo">
+				<h1 class="logo__title">
+					BIOBREIZH
+				</h1>
+			</div>
 			<nav class="mainmenu">
 		    <ul class="nav nav-mainmenu">
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#accueil">Accueil</a></li>
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#groupement">Le groupement</a></li>	
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#produits">Les produits</a></li>
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#contact">Contact</a></li>
-			    <li class="nav-mainmenu__item"><a class="nav-button" data-noscroll="true" href="http://bb.fabiencanu.fr/index.php/tmp-1">TMP</a></li>
 			  </ul>
 			</nav>
 		</header>
@@ -37,99 +38,11 @@
 			<!-- PRODUITS -->
 			<section class="ecran" id="produits">
 				<div class="container-ecran">
-					<aside class="grid__item one-third  aside-infos aside-infos--bx">
-						<h2 class="aside-infos__title">Les fiches recettes</h2>
+					<jdoc:include type="modules" name="home-ecran1-left" style="no" />
 
-						<ul class="bxslider slider-recette">
-						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="http://lorempixel.com/400/200/" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						</ul>
-						
-						<h3>La recette du jour</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
-						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
-					</aside><!--
+					--><jdoc:include type="modules" name="home-ecran1-center" style="no" /><!--
 
-					--><article class="grid__item one-third  article">
-						<header class="article__header">
-							<h1>Hello World</h1>
-						</header>
-
-						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</article><!--
-
-					--><div class="grid__item one-third  mozaic gamme">
-						<ul class="mozaic__layout mozaic-pagination">
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-						</ul>
+					<jdoc:include type="modules" name="home-ecran1-right" style="no" />
 
 					</div>
 				</div>
@@ -155,10 +68,12 @@
 
 					--><article class="grid__item one-third  article">
 						<header class="article__header">
-							<h1>Hello World</h1>
+							<h1>Decouvrez la gamme Biobreizh</h1>
 						</header>
 
-						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Découvrez la gamme de légumes des producteurs de l'APFLBB.
+
+En ce moment dans l'offre : Artichaut violet, artichaut violet poivrade, artichaut camus/castel, betterave botte, blette, céleri branche, chou-fleur, chou rave, courgette, épinard, fenouil, fraise, jeune pousse, navet, oignon blanc botte, pleurote, pomme de terre primeur, radis botte, roquette, rhubarbe, salade, shiitake.</p>
 					</article><!--
 
 					--><div class="grid__item one-third  mozaic">

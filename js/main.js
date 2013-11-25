@@ -1,18 +1,20 @@
 // Using the module pattern for a jQuery feature
 $(document).ready(function() {
 
-	$.scrollTo('#accueil', 400);
+	//$.scrollTo('#accueil', 400);
 
-	var vp = $(window).height();
-	$('.ecran').height(vp-100);
+	if($('.ecran').length > 0) {
+		var vp = $(window).height();
+		$('.ecran').height(vp-100);
 
-	if($('body').data('home')) {
-		$('.nav-button').on('click', function(e){
-			$that = $(this);
-			if($that.data('noscroll')) return true;
-			e.preventDefault();
-			$.scrollTo($that.attr('href').replace('/', ''), 400);
-		});
+		if($('body').data('home')) {
+			$('.nav-button').on('click', function(e){
+				$that = $(this);
+				if($that.data('noscroll')) return true;
+				e.preventDefault();
+				$.scrollTo($that.attr('href').replace('/', ''), 400);
+			});
+		}
 	}
 
 	/*

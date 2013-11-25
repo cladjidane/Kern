@@ -13,8 +13,21 @@
 
 .article {
 	color: $color-a-dark;
-	padding: 20px 40px 40px;
 	
+	.page & {
+		padding: 20px 40px 40px;
+	}
+
+	.home & {
+		padding: 20px;
+
+		.article__header {
+				h1 {
+				margin-top: 0;
+			}	
+		}
+	}
+		
 	a {
 		text-decoration: none; 
 		color: $color-g;
@@ -32,6 +45,21 @@
 
 	.article__chapo {
 		font-weight: bold;
+	}
+
+	.article__readmore {
+		@include font-size(14px);
+		text-align: right;	
+
+		a {		
+			@include icons-sprite(arrow-readmore-blue);
+			
+			background-position: sprite-position($icons, arrow-readmore-blue, 0, 3px);
+			color: $color-g; 
+			font-family: $hn-font-family;
+			padding-left: 10px;
+			text-decoration: none;				
+		}
 	}
 
 	h2 {

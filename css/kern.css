@@ -38,9 +38,9 @@
 
 /* alternate font-sizing */
 /* sprite */
-/* line 138, icons/*.png */
-.icons-sprite, .icons-arrow-next, .icons-arrow-prev, .icons-arrow-readmore-blue, .icons-check-white, .icons-ic-plus, .icons-livre, .icons-plus-active, .icons-sep-menu, .icons-sheet-green-r, .icons-sheet-white-l, .icons-sheet-white-r, .aside-infos .aside-infos__title, .aside-infos .aside-infos__readmore a, .contact-form .contact__submit, .nav-mainmenu > li, .mozaic .mozaic__title, .bx-wrapper .bx-prev, .bx-wrapper .bx-next {
-  background: url('../img/icons-s3e33f63e07.png') no-repeat;
+/* line 146, icons/*.png */
+.icons-sprite, .icons-arrow-next, .icons-arrow-prev, .icons-arrow-readmore-blue, .icons-arrow-readmore-white, .icons-check-white, .icons-ic-plus, .icons-livre, .icons-plus-active, .icons-sep-menu, .icons-sheet-green-r, .icons-sheet-white-l, .icons-sheet-white-r, .aside-infos .aside-infos__title, .aside-infos .aside-infos__readmore a, .article .article__readmore a, .contact-form .contact__submit, .nav-mainmenu > li, .mozaic .mozaic__title, .bx-wrapper .bx-prev, .bx-wrapper .bx-next {
+  background: url('../img/icons-s1f935ca03f.png') no-repeat;
 }
 
 /* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -56,6 +56,11 @@
 /* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-arrow-readmore-blue {
   background-position: 0 -661px;
+}
+
+/* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow-readmore-white {
+  background-position: 0 -692px;
 }
 
 /* line 60, ../../../../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -1332,11 +1337,11 @@ body {
 }
 /* line 24, ../sass/areas/_body.scss */
 .container #produits {
-  background: #96ca2d;
+  background: #4bb5c1;
 }
 /* line 28, ../sass/areas/_body.scss */
 .container #accueil {
-  background: #4bb5c1;
+  background: #96ca2d;
 }
 /* line 32, ../sass/areas/_body.scss */
 .container #groupement {
@@ -1346,15 +1351,19 @@ body {
 .container #contact {
   background: #a00d58;
 }
+/* line 40, ../sass/areas/_body.scss */
+.container .gamme {
+  background: #0c8c9b;
+}
 
-/* line 42, ../sass/areas/_body.scss */
+/* line 46, ../sass/areas/_body.scss */
 .container-ecran {
   margin: 0 auto;
   max-width: 1240px;
   padding-top: 100px;
 }
 
-/* line 49, ../sass/areas/_body.scss */
+/* line 53, ../sass/areas/_body.scss */
 .page-container, .page-footer {
   margin: 0 auto;
   max-width: 1240px;
@@ -1418,6 +1427,11 @@ body {
   background: #edf7f2;
 }
 
+/* line 19, ../sass/areas/_content.scss */
+.home-content .article {
+  background: #edf7f2;
+}
+
 /*------------------------------------*\
     sidebar
 \*------------------------------------*/
@@ -1477,34 +1491,54 @@ body {
 .aside-infos {
   color: #0c8c9b;
   position: relative;
+  overflow: hidden;
 }
-/* line 14, ../sass/modules/_aside-infos.scss */
+/* line 16, ../sass/modules/_aside-infos.scss */
+#produits .aside-infos {
+  color: white;
+}
+/* line 21, ../sass/modules/_aside-infos.scss */
+.home .aside-infos {
+  padding-right: 20px;
+}
+/* line 25, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__title {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.84615;
   background-position: 0 -454px;
-  background-position: 0 -440px;
-  line-height: 50px;
+  text-shadow: #0c8c9b 1px 1px 0;
+  background-position: 0 -434px;
+  line-height: 60px;
   padding-left: 45px;
+  margin: 0 0 30px;
+  text-align: right;
 }
-/* line 18, ../sass/modules/_aside-infos.scss */
+/* line 30, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__title:before {
   border-bottom: 1px dotted white;
   content: " ";
   width: 100%;
   position: absolute;
-  left: 32px;
-  top: 40px;
+  left: 52px;
+  top: 46px;
 }
-/* line 33, ../sass/modules/_aside-infos.scss */
+/* line 47, ../sass/modules/_aside-infos.scss */
+.aside-infos .aside-infos__subtitle {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.09091;
+  text-shadow: #0c8c9b 1px 1px 0;
+  margin-bottom: 10px;
+}
+/* line 53, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__readmore {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333;
   text-align: right;
 }
-/* line 37, ../sass/modules/_aside-infos.scss */
+/* line 57, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__readmore a {
   background-position: 0 -661px;
   background-position: 0 -656px;
@@ -1513,11 +1547,16 @@ body {
   padding-left: 10px;
   text-decoration: none;
 }
+/* line 66, ../sass/modules/_aside-infos.scss */
+#produits .aside-infos .aside-infos__readmore a {
+  color: white;
+  background-position: 0 -687px;
+}
 
 /**
  * For aside page
  */
-/* line 56, ../sass/modules/_aside-infos.scss */
+/* line 81, ../sass/modules/_aside-infos.scss */
 .aside-infos--mod .aside-infos__title {
   font-size: 26px;
   font-size: 1.625rem;
@@ -1527,11 +1566,11 @@ body {
   padding-left: 0;
   padding-right: 45px;
 }
-/* line 59, ../sass/modules/_aside-infos.scss */
+/* line 84, ../sass/modules/_aside-infos.scss */
 .aside-infos--mod .aside-infos__title:before {
   border: none;
 }
-/* line 63, ../sass/modules/_aside-infos.scss */
+/* line 88, ../sass/modules/_aside-infos.scss */
 .aside-infos--mod .aside-infos__title:after {
   border-bottom: 1px dotted white;
   content: " ";
@@ -1545,16 +1584,16 @@ body {
 /**
  * With BX-slider
  */
-/* line 85, ../sass/modules/_aside-infos.scss */
+/* line 110, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette {
   margin: 0;
   padding: 0;
 }
-/* line 89, ../sass/modules/_aside-infos.scss */
+/* line 114, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__layout-item {
   position: relative;
 }
-/* line 93, ../sass/modules/_aside-infos.scss */
+/* line 118, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__item-txt {
   background-color: rgba(255, 255, 255, 0.75);
   bottom: 0;
@@ -1642,26 +1681,53 @@ body {
 /* line 14, ../sass/modules/_article.scss */
 .article {
   color: #73a411;
+}
+/* line 17, ../sass/modules/_article.scss */
+.page .article {
   padding: 20px 40px 40px;
 }
-/* line 18, ../sass/modules/_article.scss */
+/* line 21, ../sass/modules/_article.scss */
+.home .article {
+  padding: 20px;
+}
+/* line 25, ../sass/modules/_article.scss */
+.home .article .article__header h1 {
+  margin-top: 0;
+}
+/* line 31, ../sass/modules/_article.scss */
 .article a {
   text-decoration: none;
   color: #0c8c9b;
 }
-/* line 23, ../sass/modules/_article.scss */
+/* line 36, ../sass/modules/_article.scss */
 .article ul {
   margin-left: 40px;
 }
-/* line 28, ../sass/modules/_article.scss */
+/* line 41, ../sass/modules/_article.scss */
 .article .article__header h1 {
   color: #73a411;
 }
-/* line 33, ../sass/modules/_article.scss */
+/* line 46, ../sass/modules/_article.scss */
 .article .article__chapo {
   font-weight: bold;
 }
-/* line 37, ../sass/modules/_article.scss */
+/* line 50, ../sass/modules/_article.scss */
+.article .article__readmore {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  text-align: right;
+}
+/* line 54, ../sass/modules/_article.scss */
+.article .article__readmore a {
+  background-position: 0 -661px;
+  background-position: 0 -658px;
+  color: #0c8c9b;
+  font-family: umbrage;
+  padding-left: 10px;
+  text-decoration: none;
+}
+/* line 65, ../sass/modules/_article.scss */
 .article h2 {
   color: #0c8c9b;
 }
