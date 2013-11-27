@@ -20,7 +20,7 @@
 		<header class="header">
 			<div class="logo">
 				<h1 class="logo__title">
-					BIOBREIZH
+					<img src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/img/biobreizh.gif" alt="Biobreizh, légumes BIO">
 				</h1>
 			</div>
 			<nav class="mainmenu">
@@ -38,12 +38,7 @@
 			<!-- PRODUITS -->
 			<section class="ecran" id="produits">
 				<div class="container-ecran">
-					<jdoc:include type="modules" name="home-ecran1-left" style="no" />
-
-					--><jdoc:include type="modules" name="home-ecran1-center" style="no" /><!--
-
-					<jdoc:include type="modules" name="home-ecran1-right" style="no" />
-
+					<jdoc:include type="modules" name="home-ecran1-left" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran1-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran1-right" style="no" />
 					</div>
 				</div>
 			</section>
@@ -71,9 +66,7 @@
 							<h1>Decouvrez la gamme Biobreizh</h1>
 						</header>
 
-						<p>Découvrez la gamme de légumes des producteurs de l'APFLBB.
-
-En ce moment dans l'offre : Artichaut violet, artichaut violet poivrade, artichaut camus/castel, betterave botte, blette, céleri branche, chou-fleur, chou rave, courgette, épinard, fenouil, fraise, jeune pousse, navet, oignon blanc botte, pleurote, pomme de terre primeur, radis botte, roquette, rhubarbe, salade, shiitake.</p>
+						<p>Découvrez la gamme de légumes des producteurs de l'APFLBB. En ce moment dans l'offre : Artichaut violet, artichaut violet poivrade, artichaut camus/castel, betterave botte, blette, céleri branche, chou-fleur, chou rave, courgette, épinard, fenouil, fraise, jeune pousse, navet, oignon blanc botte, pleurote, pomme de terre primeur, radis botte, roquette, rhubarbe, salade, shiitake.</p>
 					</article><!--
 
 					--><div class="grid__item one-third  mozaic">

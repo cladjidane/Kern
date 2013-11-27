@@ -15,7 +15,20 @@
 }
 
 .logo {
-	float: left;
+	@include box-shadow(black 2px 2px 10px);
+	@include border-radius(10px);
+
+	background: white;
+	position: absolute;
+	height: 160px;
+	left: 50px;
+	margin: 0;
+	padding: 20px 20px 20px 20px;
+	top: -10px;
+
+	.logo__title {
+		margin-top: 47px;
+	}
 }
 
 .mainmenu {

@@ -1336,34 +1336,38 @@ body {
   width: 100%;
 }
 /* line 24, ../sass/areas/_body.scss */
+.container > section + section {
+  padding-top: 100px;
+}
+/* line 28, ../sass/areas/_body.scss */
 .container #produits {
   background: #4bb5c1;
 }
-/* line 28, ../sass/areas/_body.scss */
+/* line 32, ../sass/areas/_body.scss */
 .container #accueil {
   background: #96ca2d;
 }
-/* line 32, ../sass/areas/_body.scss */
+/* line 36, ../sass/areas/_body.scss */
 .container #groupement {
   background: #e4dfc1;
 }
-/* line 36, ../sass/areas/_body.scss */
+/* line 40, ../sass/areas/_body.scss */
 .container #contact {
   background: #a00d58;
 }
-/* line 40, ../sass/areas/_body.scss */
+/* line 44, ../sass/areas/_body.scss */
 .container .gamme {
   background: #0c8c9b;
 }
 
-/* line 46, ../sass/areas/_body.scss */
+/* line 50, ../sass/areas/_body.scss */
 .container-ecran {
   margin: 0 auto;
   max-width: 1240px;
   padding-top: 100px;
 }
 
-/* line 53, ../sass/areas/_body.scss */
+/* line 57, ../sass/areas/_body.scss */
 .page-container, .page-footer {
   margin: 0 auto;
   max-width: 1240px;
@@ -1388,10 +1392,28 @@ body {
 
 /* line 17, ../sass/areas/_header.scss */
 .logo {
-  float: left;
+  -webkit-box-shadow: black 2px 2px 10px;
+  -moz-box-shadow: black 2px 2px 10px;
+  box-shadow: black 2px 2px 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  position: absolute;
+  height: 160px;
+  left: 50px;
+  margin: 0;
+  padding: 20px 20px 20px 20px;
+  top: -10px;
+}
+/* line 29, ../sass/areas/_header.scss */
+.logo .logo__title {
+  margin-top: 47px;
 }
 
-/* line 21, ../sass/areas/_header.scss */
+/* line 34, ../sass/areas/_header.scss */
 .mainmenu {
   float: right;
 }
@@ -1439,6 +1461,11 @@ body {
  * Sidebar : zones de contenus annexes
  * 
  */
+/* line 9, ../sass/areas/_sidebar.scss */
+.sidebar {
+  margin-top: 80px;
+}
+
 /*------------------------------------*\
     header
 \*------------------------------------*/
@@ -1561,16 +1588,18 @@ body {
   font-size: 26px;
   font-size: 1.625rem;
   line-height: 1.84615;
+  text-shadow: none;
   background-position: 100% -106px;
   line-height: 50px;
   padding-left: 0;
   padding-right: 45px;
+  text-align: left;
 }
-/* line 84, ../sass/modules/_aside-infos.scss */
+/* line 85, ../sass/modules/_aside-infos.scss */
 .aside-infos--mod .aside-infos__title:before {
   border: none;
 }
-/* line 88, ../sass/modules/_aside-infos.scss */
+/* line 89, ../sass/modules/_aside-infos.scss */
 .aside-infos--mod .aside-infos__title:after {
   border-bottom: 1px dotted white;
   content: " ";
@@ -1580,20 +1609,32 @@ body {
   right: 32px;
   top: 40px;
 }
+/* line 108, ../sass/modules/_aside-infos.scss */
+.aside-infos--mod .category-module li {
+  background: white;
+  margin-bottom: 5px;
+  margin-right: 15px;
+  padding: 5px;
+}
+/* line 114, ../sass/modules/_aside-infos.scss */
+.aside-infos--mod .category-module li a {
+  text-decoration: none;
+  color: #bba276;
+}
 
 /**
  * With BX-slider
  */
-/* line 110, ../sass/modules/_aside-infos.scss */
+/* line 126, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette {
   margin: 0;
   padding: 0;
 }
-/* line 114, ../sass/modules/_aside-infos.scss */
+/* line 130, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__layout-item {
   position: relative;
 }
-/* line 118, ../sass/modules/_aside-infos.scss */
+/* line 134, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__item-txt {
   background-color: rgba(255, 255, 255, 0.75);
   bottom: 0;
