@@ -38,7 +38,9 @@
 			<!-- PRODUITS -->
 			<section class="ecran" id="produits">
 				<div class="container-ecran">
-					<jdoc:include type="modules" name="home-ecran1-left" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran1-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran1-right" style="no" />
+					<jdoc:include type="modules" name="home-ecran1-left" style="no" /><!-- 
+					--><div class="grid__item two-thirds ">
+						<jdoc:include type="modules" name="home-ecran1-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran1-right" style="no" />
 					</div>
 				</div>
 			</section>
@@ -46,98 +48,9 @@
 			<!-- ACCUEIL -->			
 			<section class="ecran" id="accueil">
 				<div class="container-ecran">
-					<aside class="grid__item one-third  aside-infos aside-infos--bx">
-						<h2 class="aside-infos__title">Acualités BIO</h2>
-
-						<ul class="bxslider slider-recette">
-						  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						</ul>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
-						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
-					</aside><!--
-
-					--><article class="grid__item one-third  article">
-						<header class="article__header">
-							<h1>Decouvrez la gamme Biobreizh</h1>
-						</header>
-
-						<p>Découvrez la gamme de légumes des producteurs de l'APFLBB. En ce moment dans l'offre : Artichaut violet, artichaut violet poivrade, artichaut camus/castel, betterave botte, blette, céleri branche, chou-fleur, chou rave, courgette, épinard, fenouil, fraise, jeune pousse, navet, oignon blanc botte, pleurote, pomme de terre primeur, radis botte, roquette, rhubarbe, salade, shiitake.</p>
-					</article><!--
-
-					--><div class="grid__item one-third  mozaic">
-						<ul class="mozaic__layout mozaic-pagination">
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-						</ul>
+					<jdoc:include type="modules" name="home-ecran2-left" style="no" /><!-- 
+					--><div class="grid__item two-thirds ">
+						<jdoc:include type="modules" name="home-ecran2-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran2-right" style="no" />
 					</div>
 				</div>
 			</section>
@@ -145,70 +58,9 @@
 			<!-- LE GROUPEMENT -->
 			<section class="ecran" id="groupement">
 				<div class="container-ecran">
-					<aside class="grid__item one-third  aside-infos aside-infos--bx">
-						<h2 class="aside-infos__title">Acualités BIO</h2>
-
-						<ul class="bxslider slider-recette">
-						  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						</ul>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
-						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
-					</aside><!--
-
-					--><article class="grid__item one-third  article">
-						<header class="article__header">
-							<h1>Hello World</h1>
-						</header>
-
-						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</article><!--
-
-					--><div class="grid__item one-third  mozaic">
-						<ul class="mozaic__layout mozaic-pagination">
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte et bla bla texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/th-poder.png" alt="">
-									<div class="mozaic__item-desc"><span>texte</span></div>
-								</a>
-							</li>
-						</ul>
-
+					<jdoc:include type="modules" name="home-ecran3-left" style="no" /><!-- 
+					--><div class="grid__item two-thirds ">
+						<jdoc:include type="modules" name="home-ecran3-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran3-right" style="no" />
 					</div>
 				</div>
 			</section>
@@ -216,64 +68,9 @@
 			<!-- CONTACT -->
 			<section class="ecran" id="contact">
 				<div class="container-ecran">
-					<aside class="grid__item one-third  aside-infos aside-infos--bx">
-						<h2 class="aside-infos__title">Acualités BIO</h2>
-
-						<ul class="bxslider slider-recette">
-						  <li class="slider-recette__layout-item"><img src="img/th-bbe.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-poder.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-pronatura.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-trevilly.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						  <li class="slider-recette__layout-item"><img src="img/th-voisins.png" /><div class="slider-recette__item-txt">Chou-fleur</div></li>
-						</ul>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore hic rem cumque reiciendis quam corporis illum dolorum soluta doloremque deleniti. Provident, sunt, libero voluptatem quo tempora inventore molestiae tenetur ipsum.</p>
-						<p class="aside-infos__readmore"><a href="#">Lire la suite</a></p>
-					</aside><!--
-
-					--><article class="grid__item one-third  article">
-						<header class="article__header">
-							<h1>Hello World</h1>
-						</header>
-
-						<p class="article__chapo">Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</article><!--
-
-					--><div class="grid__item one-third  mozaic">
-					<h1>L'équipe</h1>
-						<ul class="mozaic__layout mozaic-pagination">
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/yoann-morin.png" alt="">
-									<div class="mozaic__item-desc"><span>Yoann Morin</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/tiefen-lebros.png" alt="">
-									<div class="mozaic__item-desc"><span>Tiefen lebros</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/eric-sire.png" alt="">
-									<div class="mozaic__item-desc"><span>eric-sire</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/dominique-dyupaty.png" alt="">
-									<div class="mozaic__item-desc"><span>Dominique <br />Duapaty</span></div>
-								</a>
-							</li>
-							<li class="mozaic__item">
-								<a href="">
-									<img src="img/annabelle-cras.png" alt="">
-									<div class="mozaic__item-desc"><span>Annabelle <br />cras</span></div>
-								</a>
-							</li>
-						</ul>
-
+					<jdoc:include type="modules" name="home-ecran4-left" style="no" /><!-- 
+					--><div class="grid__item two-thirds ">
+						<jdoc:include type="modules" name="home-ecran4-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran4-right" style="no" />
 					</div>
 				</div>
 			</section>

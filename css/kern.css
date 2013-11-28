@@ -1209,9 +1209,9 @@ table {
  */
 /* line 12, ../sass/generic/_typos.scss */
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.71429;
   /* 1 */
   background: white;
 }
@@ -1236,7 +1236,7 @@ h1, .h1-like {
   margin: 1.5em 0 1em 0;
   font-family: umbrage;
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.42857rem;
   line-height: 1.2;
 }
 
@@ -1245,7 +1245,7 @@ h2, .h2-like {
   margin: 1.66667em 0 1.11111em 0;
   font-family: umbrage;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.28571rem;
   line-height: 1.33333;
 }
 
@@ -1254,7 +1254,7 @@ h3, .h3-like {
   margin: 1.875em 0 1.25em 0;
   font-family: umbrage;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.14286rem;
   line-height: 1.5;
 }
 
@@ -1263,7 +1263,7 @@ h4, .h4-like {
   margin: 2.14286em 0 1.42857em 0;
   font-family: umbrage;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.71429;
 }
 
@@ -1272,7 +1272,7 @@ h5, .h5-like {
   margin: 2.5em 0 1.66667em 0;
   font-family: umbrage;
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.85714rem;
   line-height: 2;
 }
 
@@ -1281,7 +1281,7 @@ h6, .h6-like {
   margin: 2.5em 0 1.66667em 0;
   font-family: umbrage;
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.85714rem;
   line-height: 2;
 }
 
@@ -1297,7 +1297,7 @@ h6, .h6-like {
  */
 /* line 13, ../sass/generic/_main.scss */
 html {
-  font: 1em/1.5 Arial, sans-serif;
+  font: 0.875em/1.71429 Arial, sans-serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -1449,11 +1449,6 @@ body {
   background: #edf7f2;
 }
 
-/* line 19, ../sass/areas/_content.scss */
-.home-content .article {
-  background: #edf7f2;
-}
-
 /*------------------------------------*\
     sidebar
 \*------------------------------------*/
@@ -1481,7 +1476,7 @@ body {
 /* line 15, ../sass/areas/_footer.scss */
 .footer section h3 {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.14286rem;
   line-height: 1.5;
   line-height: 38px;
   margin-bottom: 15px;
@@ -1531,7 +1526,7 @@ body {
 /* line 25, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__title {
   font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 1.85714rem;
   line-height: 1.84615;
   background-position: 0 -454px;
   text-shadow: #0c8c9b 1px 1px 0;
@@ -1553,7 +1548,7 @@ body {
 /* line 47, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__subtitle {
   font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 1.57143rem;
   line-height: 1.09091;
   text-shadow: #0c8c9b 1px 1px 0;
   margin-bottom: 10px;
@@ -1561,7 +1556,7 @@ body {
 /* line 53, ../sass/modules/_aside-infos.scss */
 .aside-infos .aside-infos__readmore {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.28571rem;
   line-height: 1.33333;
   text-align: right;
 }
@@ -1586,7 +1581,7 @@ body {
 /* line 81, ../sass/modules/_aside-infos.scss */
 .aside-infos--mod .aside-infos__title {
   font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 1.85714rem;
   line-height: 1.84615;
   text-shadow: none;
   background-position: 100% -106px;
@@ -1625,22 +1620,45 @@ body {
 /**
  * With BX-slider
  */
-/* line 126, ../sass/modules/_aside-infos.scss */
+/* line 127, ../sass/modules/_aside-infos.scss */
+.aside-infos--bx .aside-infos__title {
+  margin-bottom: 10px;
+}
+/* line 131, ../sass/modules/_aside-infos.scss */
+.aside-infos--bx .aside-infos__subtitle {
+  margin-top: 20px;
+}
+/* line 135, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette {
   margin: 0;
   padding: 0;
 }
-/* line 130, ../sass/modules/_aside-infos.scss */
+/* line 139, ../sass/modules/_aside-infos.scss */
+.aside-infos--bx .slider-recette a {
+  color: #a00d58;
+}
+/* line 143, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__layout-item {
   position: relative;
 }
-/* line 134, ../sass/modules/_aside-infos.scss */
+/* line 147, ../sass/modules/_aside-infos.scss */
 .aside-infos--bx .slider-recette .slider-recette__item-txt {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 2;
   background-color: rgba(255, 255, 255, 0.75);
   bottom: 0;
-  height: 50%;
+  font-family: umbrage;
+  height: 40%;
   position: absolute;
+  width: 100%;
+}
+/* line 157, ../sass/modules/_aside-infos.scss */
+.aside-infos--bx .slider-recette .slider-recette__item-txt span {
+  display: inline-block;
+  line-height: 10px;
   text-align: center;
+  vertical-align: middle;
   width: 100%;
 }
 
@@ -1722,44 +1740,38 @@ body {
 /* line 14, ../sass/modules/_article.scss */
 .article {
   color: #73a411;
+  position: relative;
 }
-/* line 17, ../sass/modules/_article.scss */
+/* line 19, ../sass/modules/_article.scss */
 .page .article {
   padding: 20px 40px 40px;
 }
-/* line 21, ../sass/modules/_article.scss */
+/* line 24, ../sass/modules/_article.scss */
 .home .article {
-  padding: 20px;
+  background: #edf7f2;
+  min-height: 330px;
+  padding: 20px 20px 20px 45px;
 }
-/* line 25, ../sass/modules/_article.scss */
+/* line 30, ../sass/modules/_article.scss */
 .home .article .article__header h1 {
   margin-top: 0;
 }
-/* line 31, ../sass/modules/_article.scss */
-.article a {
-  text-decoration: none;
-  color: #0c8c9b;
-}
-/* line 36, ../sass/modules/_article.scss */
-.article ul {
-  margin-left: 40px;
-}
-/* line 41, ../sass/modules/_article.scss */
+/* line 37, ../sass/modules/_article.scss */
 .article .article__header h1 {
   color: #73a411;
 }
-/* line 46, ../sass/modules/_article.scss */
+/* line 42, ../sass/modules/_article.scss */
 .article .article__chapo {
   font-weight: bold;
 }
-/* line 50, ../sass/modules/_article.scss */
+/* line 46, ../sass/modules/_article.scss */
 .article .article__readmore {
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.71429;
   text-align: right;
 }
-/* line 54, ../sass/modules/_article.scss */
+/* line 50, ../sass/modules/_article.scss */
 .article .article__readmore a {
   background-position: 0 -661px;
   background-position: 0 -658px;
@@ -1768,9 +1780,46 @@ body {
   padding-left: 10px;
   text-decoration: none;
 }
-/* line 65, ../sass/modules/_article.scss */
+/* line 61, ../sass/modules/_article.scss */
 .article h2 {
   color: #0c8c9b;
+}
+/* line 65, ../sass/modules/_article.scss */
+.article a {
+  text-decoration: none;
+  color: #0c8c9b;
+}
+/* line 70, ../sass/modules/_article.scss */
+.article ul {
+  margin-left: 40px;
+}
+/* line 76, ../sass/modules/_article.scss */
+.article .diago-article {
+  border: 25px solid;
+  border-top-width: 330px;
+  border-bottom: none;
+  border-left: none;
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+/* line 88, ../sass/modules/_article.scss */
+#produits .article .diago-article {
+  border-color: #4bb5c1 transparent;
+}
+/* line 92, ../sass/modules/_article.scss */
+#accueil .article .diago-article {
+  border-color: #96ca2d transparent;
+}
+/* line 96, ../sass/modules/_article.scss */
+#groupement .article .diago-article {
+  border-color: #e4dfc1 transparent;
+}
+/* line 100, ../sass/modules/_article.scss */
+#contact .article .diago-article {
+  border-color: #a00d58 transparent;
 }
 
 /*------------------------------------*\
@@ -1873,7 +1922,7 @@ body {
 /* line 40, ../sass/modules/_nav.scss */
 .nav-mainmenu {
   font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 2.14286rem;
   line-height: 1.6;
   font-family: umbrage;
 }
@@ -1903,9 +1952,11 @@ body {
  */
 /* line 11, ../sass/modules/_mozaic.scss */
 .mozaic {
+  min-height: 330px;
+  padding: 24px 14px 14px 24px;
   position: relative;
 }
-/* line 15, ../sass/modules/_mozaic.scss */
+/* line 17, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__title {
   background-position: 0 -120px;
   background-position: 100% -106px;
@@ -1913,7 +1964,7 @@ body {
   line-height: 50px;
   padding-right: 45px;
 }
-/* line 19, ../sass/modules/_mozaic.scss */
+/* line 21, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__title:before {
   border-bottom: 1px dotted white;
   content: " ";
@@ -1922,36 +1973,37 @@ body {
   right: 32px;
   top: 40px;
 }
-/* line 36, ../sass/modules/_mozaic.scss */
+/* line 38, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__layout {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/* line 43, ../sass/modules/_mozaic.scss */
+/* line 47, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item {
-  background-color: white;
   float: left;
-  margin: 0 0.5% 5px 0;
+  margin: 0 5px 5px 0;
   position: relative;
-  width: 33%;
+  width: 31%;
 }
-/* line 50, ../sass/modules/_mozaic.scss */
+/* line 54, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item:nth-child(3), .mozaic .mozaic__item:nth-child(6), .mozaic .mozaic__item:nth-child(9) {
   margin-right: 0;
 }
-/* line 54, ../sass/modules/_mozaic.scss */
+/* line 58, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
 }
-/* line 60, ../sass/modules/_mozaic.scss */
+/* line 64, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item a {
   color: #0c8c9b;
 }
-/* line 67, ../sass/modules/_mozaic.scss */
+/* line 71, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item-desc {
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.85714rem;
   line-height: 2;
   background-color: rgba(255, 255, 255, 0.75);
   bottom: 0;
@@ -1960,7 +2012,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 77, ../sass/modules/_mozaic.scss */
+/* line 81, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item-desc span {
   display: inline-block;
   line-height: 10px;
@@ -1972,15 +2024,15 @@ body {
 /**
  * Mozaic avec pagination
  */
-/* line 91, ../sass/modules/_mozaic.scss */
+/* line 95, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-page {
   display: none;
 }
-/* line 95, ../sass/modules/_mozaic.scss */
+/* line 99, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-page-active {
   display: block;
 }
-/* line 99, ../sass/modules/_mozaic.scss */
+/* line 103, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-next {
   background: none;
   cursor: pointer;
@@ -1988,7 +2040,7 @@ body {
   bottom: 0;
   right: 0;
 }
-/* line 106, ../sass/modules/_mozaic.scss */
+/* line 110, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-next div {
   height: 40px;
   left: 50%;

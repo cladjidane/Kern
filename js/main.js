@@ -23,6 +23,9 @@ $(document).ready(function() {
 		}
 	})
 
+	// Effet diagonale
+	$('.home article').append($('<div class="diago-article" />'));
+
 	
 
 	/*
@@ -151,7 +154,7 @@ $(document).ready(function() {
 	$('.gamme').mozaic();
 
 	$('.slider-recette').bxSlider({
-		slideWidth: 78,
+		slideWidth: 100,
     minSlides: 2,
     maxSlides: 3,
     slideMargin: 10,

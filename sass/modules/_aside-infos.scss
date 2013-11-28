@@ -123,22 +123,44 @@
  * With BX-slider
  */ 
 .aside-infos--bx {
+
+	.aside-infos__title {
+		margin-bottom: 10px;
+	}
+
+	.aside-infos__subtitle {
+		margin-top: 20px;
+	}
+	
 	.slider-recette {
 		margin: 0;
 		padding: 0;
+
+		a {
+			color: $color-d;
+		}
 
 		.slider-recette__layout-item {
 			position: relative;
 		}
 
 		.slider-recette__item-txt {
-			background-color: transparentize(white, 0.25);
+			@include font-size(12px);
 
+			background-color: transparentize(white, 0.25);
 			bottom: 0;
-			height: 50%;
+			font-family: $hn-font-family;
+			height: 40%;
 			position: absolute;
-			text-align: center;
 			width: 100%;
+
+			span {
+				display: inline-block;
+				line-height: 10px;
+				text-align: center;
+	    	vertical-align: middle;
+	    	width: 100%; 
+			}
 		}
 	}
 }

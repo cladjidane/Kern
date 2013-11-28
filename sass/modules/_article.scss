@@ -13,13 +13,18 @@
 
 .article {
 	color: $color-a-dark;
+	position: relative;
 	
+	// Spécifique page ce contenus / home
 	.page & {
 		padding: 20px 40px 40px;
 	}
 
+	// Spécifique page ce contenus / home
 	.home & {
-		padding: 20px;
+		background: $color-f;
+		min-height: 330px;
+		padding: 20px 20px 20px 45px;
 
 		.article__header {
 				h1 {
@@ -27,15 +32,6 @@
 			}	
 		}
 	}
-		
-	a {
-		text-decoration: none; 
-		color: $color-g;
-	}
-
-	ul {
-		margin-left: 40px;
-	} 
 
 	.article__header {
 		h1 {
@@ -65,4 +61,46 @@
 	h2 {
 		color: $color-g;
 	}
+		
+	a {
+		text-decoration: none; 
+		color: $color-g;
+	}
+
+	ul {
+		margin-left: 40px;
+	} 
+
+	// Extra
+	// Todo faire un mixin ou un placeholder
+	.diago-article {
+	  border: 25px solid;
+	  border-top-width: 330px;
+	  border-bottom: none; 
+	  border-left: none;
+
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 0;
+
+		#produits & {			
+	  	border-color: $color-b transparent;  
+		}
+
+		#accueil & {			
+	  	border-color: $color-a transparent;
+		}
+
+		#groupement & {			
+	  	border-color: $color-c transparent;
+		}
+
+		#contact & {			
+	  	border-color: $color-d transparent;
+		}
+	}
+
+
 }
