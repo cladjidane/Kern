@@ -9,6 +9,6 @@
 
 defined('_JEXEC') or die;
 ?>
-<div class="grid__item five-twelfths custom<?php echo $moduleclass_sfx ?>" <?php if ($params->get('backgroundimage')) : ?> style="background-image:url(<?php echo $params->get('backgroundimage');?>)"<?php endif;?> >
+<div class="grid__item five-twelfths block-blue custom<?php echo $moduleclass_sfx ?>">
 	<?php echo $module->content;?>
 </div>

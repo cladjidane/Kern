@@ -59,6 +59,15 @@ $icons-spacing : 20px;
 @include all-icons-sprites; 
 $icons: sprite-map("icons/*.png", $spacing: $icons-spacing);
 
+/* Placeholders */
+%block-blue {	
+	color: $color-g; 
+	height: 330px;
+	padding: 24px 14px 14px 24px;
+	position: relative;
+	overflow: hidden;
+}
+
 
 /* debug */
 $debug-mode: false!default;

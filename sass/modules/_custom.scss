@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    custom
+\*------------------------------------*/
+/**
+ * Custom : Spécific template Joomla pour les mod_custom
+ */
+
+/**
+ * Mozaic
+ */
+ .block-blue {
+ 		@extend %block-blue;
+
+		background: $color-g;
+		color: white;
+ 		padding: 24px;
+
+ }

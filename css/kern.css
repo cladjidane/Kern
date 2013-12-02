@@ -103,6 +103,16 @@
   background-position: 0 -120px;
 }
 
+/* Placeholders */
+/* line 63, ../sass/_base.scss */
+.mozaic, .block-blue {
+  color: #0c8c9b;
+  height: 330px;
+  padding: 24px 14px 14px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
 /* debug */
 /* Responsive */
 /* breakpoint */
@@ -1950,21 +1960,22 @@ body {
 /**
  * Mozaic
  */
-/* line 11, ../sass/modules/_mozaic.scss */
-.mozaic {
-  min-height: 330px;
-  padding: 24px 14px 14px 24px;
-  position: relative;
-}
-/* line 17, ../sass/modules/_mozaic.scss */
+/* line 15, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__title {
-  background-position: 0 -120px;
+  font-size: 21px;
+  font-size: 1.5rem;
+  line-height: 1.14286;
+  text-shadow: none;
+  background-position: 0 -454px;
   background-position: 100% -106px;
   color: white;
   line-height: 50px;
-  padding-right: 45px;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  top: -21px;
 }
-/* line 21, ../sass/modules/_mozaic.scss */
+/* line 20, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__title:before {
   border-bottom: 1px dotted white;
   content: " ";
@@ -1973,34 +1984,34 @@ body {
   right: 32px;
   top: 40px;
 }
-/* line 38, ../sass/modules/_mozaic.scss */
+/* line 40, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__layout {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 47, ../sass/modules/_mozaic.scss */
+/* line 49, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item {
   float: left;
   margin: 0 5px 5px 0;
   position: relative;
   width: 31%;
 }
-/* line 54, ../sass/modules/_mozaic.scss */
+/* line 56, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item:nth-child(3), .mozaic .mozaic__item:nth-child(6), .mozaic .mozaic__item:nth-child(9) {
   margin-right: 0;
 }
-/* line 58, ../sass/modules/_mozaic.scss */
+/* line 60, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item img {
   display: block;
   margin: 0 auto;
   width: 100%;
 }
-/* line 64, ../sass/modules/_mozaic.scss */
+/* line 66, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item a {
   color: #0c8c9b;
 }
-/* line 71, ../sass/modules/_mozaic.scss */
+/* line 73, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item-desc {
   font-size: 12px;
   font-size: 0.85714rem;
@@ -2012,7 +2023,7 @@ body {
   position: absolute;
   width: 100%;
 }
-/* line 81, ../sass/modules/_mozaic.scss */
+/* line 83, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic__item-desc span {
   display: inline-block;
   line-height: 10px;
@@ -2024,15 +2035,15 @@ body {
 /**
  * Mozaic avec pagination
  */
-/* line 95, ../sass/modules/_mozaic.scss */
+/* line 97, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-page {
   display: none;
 }
-/* line 99, ../sass/modules/_mozaic.scss */
+/* line 101, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-page-active {
   display: block;
 }
-/* line 103, ../sass/modules/_mozaic.scss */
+/* line 105, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-next {
   background: none;
   cursor: pointer;
@@ -2040,7 +2051,7 @@ body {
   bottom: 0;
   right: 0;
 }
-/* line 110, ../sass/modules/_mozaic.scss */
+/* line 112, ../sass/modules/_mozaic.scss */
 .mozaic .mozaic-next div {
   height: 40px;
   left: 50%;
@@ -2123,6 +2134,22 @@ body {
 /* line 73, ../sass/modules/_grids.scss */
 .grid--right > .grid__item {
   text-align: left;
+}
+
+/*------------------------------------*\
+    custom
+\*------------------------------------*/
+/**
+ * Custom : Spécific template Joomla pour les mod_custom
+ */
+/**
+ * Mozaic
+ */
+/* line 11, ../sass/modules/_custom.scss */
+.block-blue {
+  background: #0c8c9b;
+  color: white;
+  padding: 24px;
 }
 
 /**
