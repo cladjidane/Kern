@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    diapomask
+\*------------------------------------*/
+/**
+ * Diapomask : Affichage d'un diaporamam sous BX slider
+ * Un mask permet d'ajouter un effet
+ * 
+ */
+
+.diapohome {
+	bottom: 0;
+	//display: none;
+	height: 555px;
+	position: absolute;
+	right: 0;
+	width: 740px; 
+
+	.bx-wrapper {
+		padding: 0;
+		margin: 0;
+	}
+
+	.bx-wrapper .bx-viewport {
+		left: 0;
+	}
+
+	.diapohome__list {
+		z-index: 10;
+	}
+
+	.diapohome__mask {
+		background: url(../img/mask-vert.png) no-repeat;
+		height: 555px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 740px; 
+		z-index: 100;
+	}
+}
+

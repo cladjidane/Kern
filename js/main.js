@@ -1,43 +1,61 @@
 // Using the module pattern for a jQuery feature
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
 	//$.scrollTo('#accueil', 400);
 
-	var vp = $(window).height();
-	$('.ecran').height(vp-100);
+	var vp = jQuery(window).height();
+	jQuery('.ecran').height(vp-100);
 
-	if($('body').data('home')) {
-		$('.nav-button').on('click', function(e){
-			$that = $(this);
+	if(jQuery('body').data('home')) {
+		jQuery('.nav-button').on('click', function(e){
+			$that = jQuery(this);
 			if($that.data('noscroll')) return true;
 			e.preventDefault();
 			$.scrollTo($that.attr('href').replace('/', ''), 400);
 		});
 	}
 
-	$('.article ul').each(function(i, el){
-		$ul = $(el);
-		if ($('li:first-child', $ul).children().is('img')) {
+	jQuery('.article ul').each(function(i, el){
+		$ul = jQuery(el);
+		if (jQuery('li:first-child', $ul).children().is('img')) {
 			$ul.addClass('bx');
-			$ul.bxSlider();
+			$ul.bxSlider({
+				pager: false,
+				responsive: false,
+				controls: false,
+				auto: true,
+				slideWidth: 275,
+				slideMargin: 0
+			});
 		}
 	})
 
 	// Effet diagonale
-	$('.home article').append($('<div class="diago-article" />'));
+	jQuery('.home article').append(jQuery('<div class="diago-article" />'));
 
-	
+	// Mozaic equipe
+	jQuery('.equipe a').each(function(i, el){
+		$el = jQuery(el);
+		$el.attr('href', $el.attr('href') + '&tmpl=component');
+	});
+
+	jQuery('.equipe a').click(function( event ) {
+  	event.preventDefault();
+
+  	jQuery('#contact .article').load(jQuery(this).attr('href'));
+  });
+
 
 	/*
 	var feature = (function() {
 		
-		var $items = $(".contact li");
-		var $container = $("<div class='container'></div>");
+		var $items = jQuery(".contact li");
+		var $container = jQuery("<div class='container'></div>");
 		var $currentItem = null;
 		var urlBase = "/?item=";
 
 		var createContainer = function() {
-			var $i = $(this);
+			var $i = jQuery(this);
 			var $c = $container.clone().appendTo($i);
 			$i.data("container", $c);
 		},
@@ -45,7 +63,7 @@ $(document).ready(function() {
 			return urlBase + $currentItem.attr("id");
 		},
 		showItem = function() {
-			$currentItem = $(this);
+			$currentItem = jQuery(this);
 			getContent(showContent);
 		},
 		showItemByIndex = function(idx) {
@@ -61,7 +79,7 @@ $(document).ready(function() {
 		},
 		hideContent = function() {
 			$currentItem.siblings().each(function() {
-				$(this).data("container").hide();
+				jQuery(this).data("container").hide();
 			});
 		};
 		
@@ -78,8 +96,8 @@ $(document).ready(function() {
 	/*
 	var mozaic = (function(){
 
-		var	$ul = $('.mozaic-pagination'),
-				$li = $('.mozaic-pagination li'),
+		var	$ul = jQuery('.mozaic-pagination'),
+				$li = jQuery('.mozaic-pagination li'),
 				numPerPage = 8,
 				numRows = 3,
 				count = 1;
@@ -98,35 +116,35 @@ $(document).ready(function() {
 			navBuild();
 
 			// On active le premier et masque les autres
-			$('.mozaic-page').height(($('.mozaic__item').eq(0).height() * 3) + 15).eq(0).addClass('mozaic-page-active');
+			jQuery('.mozaic-page').height((jQuery('.mozaic__item').eq(0).height() * 3) + 15).eq(0).addClass('mozaic-page-active');
 
 			// Navigation
-			$('.mozaic-next').on('click', function(el){
-				var $next = $('.mozaic-page-active').next();
-				var $current = $('.mozaic-page-active');
+			jQuery('.mozaic-next').on('click', function(el){
+				var $next = jQuery('.mozaic-page-active').next();
+				var $current = jQuery('.mozaic-page-active');
 
 				$current.removeClass('mozaic-page-active');
 				
 				if($next.length != 0) {
 					$next.addClass('mozaic-page-active');
 				} else {
-					$('.mozaic-page').eq(0).addClass('mozaic-page-active');					
+					jQuery('.mozaic-page').eq(0).addClass('mozaic-page-active');					
 				}				
 			})
 
 			// Resize
-			$( window ).resize(function() {
+			jQuery( window ).resize(function() {
 			  navDimension();
 			});
 		}
 
 		navBuild = function() {
 			// On construit le block pour la nav
-			$('<li class="mozaic-next mozaic__item"></li>')
+			jQuery('<li class="mozaic-next mozaic__item"></li>')
 				.css('margin-right', 0)
 				.appendTo('.mozaic-page');
 			// On construit le block pour l'icone et le click
-			$('<div class="mozaic-next-icon icons-plus-active"></div>')
+			jQuery('<div class="mozaic-next-icon icons-plus-active"></div>')
 				.appendTo('.mozaic-next');
 
 			// Dimension idéal du block
@@ -134,10 +152,10 @@ $(document).ready(function() {
 		}
 
 		navDimension = function() {
-			var $item = $('.mozaic__item').eq(0);
+			var $item = jQuery('.mozaic__item').eq(0);
 
 			// Le block fait la même taille que les autres li
-			$('.mozaic-next')
+			jQuery('.mozaic-next')
 				.width($item.width())
 				.height($item.height());
 
@@ -151,9 +169,9 @@ $(document).ready(function() {
 	})();
 	*/
 
-	$('.gamme').mozaic();
+	jQuery('.gamme').mozaic();
 
-	$('.slider-recette').bxSlider({
+	jQuery('.slider-recette').bxSlider({
 		slideWidth: 100,
     minSlides: 2,
     maxSlides: 3,
@@ -161,5 +179,19 @@ $(document).ready(function() {
     pager: false
 	});
 
+	jQuery('.slider-adherent').bxSlider({
+		slideWidth: 100,
+    minSlides: 2,
+    maxSlides: 3,
+    slideMargin: 10,
+    pager: false
+	});
+
+	jQuery('.diapohome__list').bxSlider({
+    pager: false,
+    controls: false,
+    auto: true,
+    preloadImages: 'all'
+	});
 
 });

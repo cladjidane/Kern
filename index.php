@@ -1,3 +1,16 @@
+<?php 
+
+$search = array('mootools-more.js', 'caption.js');
+    // remove the js files
+    foreach($this->_scripts as $key => $script) {
+        foreach($search as $findme) {
+            if(stristr($key, $findme) !== false) {
+                unset($this->_scripts[$key]);
+            }
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <!--[if lte IE 7]> <html class="no-js ie67 ie678" lang="fr"> <![endif]-->
 <!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
@@ -19,15 +32,17 @@
 
 		<header class="header">
 			<div class="logo">
-				<h1 class="logo__title">
-					<img src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/img/biobreizh.gif" alt="Biobreizh, légumes BIO">
-				</h1>
+				<a href="/">
+					<h1 class="logo__title">
+						<img src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/img/biobreizh.gif" alt="Biobreizh, légumes BIO">
+					</h1>
+				</a>
 			</div>
 			<nav class="mainmenu">
 		    <ul class="nav nav-mainmenu">
-			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#accueil">Accueil</a></li>
-			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#groupement">Le groupement</a></li>	
+			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#accueil">Biobreizh</a></li>
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#produits">Les produits</a></li>
+			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#groupement">Le groupement</a></li>	
 			    <li class="nav-mainmenu__item"><a class="nav-button" href="/#contact">Contact</a></li>
 			  </ul>
 			</nav>
@@ -35,22 +50,47 @@
 
 		<div class="container">
 			
-			<!-- PRODUITS -->
-			<section class="ecran" id="produits">
-				<div class="container-ecran">
-					<jdoc:include type="modules" name="home-ecran1-left" style="no" /><!-- 
-					--><div class="grid__item two-thirds ">
-						<jdoc:include type="modules" name="home-ecran1-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran1-right" style="no" />
-					</div>
-				</div>
-			</section>
-			
 			<!-- ACCUEIL -->			
 			<section class="ecran" id="accueil">
 				<div class="container-ecran">
-					<jdoc:include type="modules" name="home-ecran2-left" style="no" /><!-- 
+					<div class="grid__item one-quarter">
+						<jdoc:include type="modules" name="home-ecran2-left" style="no" />
+					</div><!-- 
 					--><div class="grid__item two-thirds ">
-						<jdoc:include type="modules" name="home-ecran2-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran2-right" style="no" />
+						<jdoc:include type="modules" name="home-ecran2-center" style="no" /><!-- 
+						--><div class="grid__item five-twelfths">
+							<jdoc:include type="modules" name="home-ecran2-right" style="no" />
+						</div>
+					</div>
+				</div>
+
+				<div class="diapohome">
+					<ul class="diapohome__list">
+						<li><img src="/images/diaporama-home/biobreizh/1.jpg" alt=""></li>
+						<li><img src="/images/diaporama-home/biobreizh/2.jpg" alt=""></li>
+						<li><img src="/images/diaporama-home/biobreizh/3.jpg" alt=""></li>
+					</ul>
+					<div class="diapohome__mask"></div>
+				</div>
+
+				<div id="animCoccinelle">
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" height="100" width="815">
+						<param name="movie" value="images/flash/coccinelle2.swf">
+						<param name="quality" value="high">
+						<param name="wmode" value="transparent">
+						<embed src="images/flash/coccinelle2.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent" height="100" width="815">
+					</object>
+				</div>
+			</section>
+			
+			<!-- PRODUITS -->
+			<section class="ecran" id="produits">
+				<div class="container-ecran">
+					<div class="grid__item one-quarter">
+						<jdoc:include type="modules" name="home-ecran1-left" style="no" />
+					</div><!-- 
+					--><div class="grid__item two-thirds ">
+						<jdoc:include type="modules" name="home-ecran1-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran1-right" style="no" />
 					</div>
 				</div>
 			</section>
@@ -58,7 +98,9 @@
 			<!-- LE GROUPEMENT -->
 			<section class="ecran" id="groupement">
 				<div class="container-ecran">
-					<jdoc:include type="modules" name="home-ecran3-left" style="no" /><!-- 
+					<div class="grid__item one-quarter">
+						<jdoc:include type="modules" name="home-ecran3-left" style="no" />
+					</div><!-- 
 					--><div class="grid__item two-thirds ">
 						<jdoc:include type="modules" name="home-ecran3-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran3-right" style="no" />
 					</div>
@@ -68,12 +110,23 @@
 			<!-- CONTACT -->
 			<section class="ecran" id="contact">
 				<div class="container-ecran">
-					<jdoc:include type="modules" name="home-ecran4-left" style="no" /><!-- 
+					<div class="grid__item one-quarter">
+						<jdoc:include type="modules" name="home-ecran4-left" style="no" />
+					</div><!-- 
 					--><div class="grid__item two-thirds ">
 						<jdoc:include type="modules" name="home-ecran4-center" style="no" /><!-- --><jdoc:include type="modules" name="home-ecran4-right" style="no" />
 					</div>
 				</div>
 			</section>
+
+			<div id="animVer">
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" height="271" width="159">
+					<param name="movie" value="images/flash/ver2.swf">
+					<param name="quality" value="high">
+					<param name="wmode" value="transparent">
+					<embed src="images/flash/ver2.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent" height="271" width="159"> 
+			  	</object>
+		  	</div>
 		</div>
 
 		<script src="<?php echo $this->baseurl . '/templates/' . $this->template; ?>/js/vendor/jquery-min.js"></script>

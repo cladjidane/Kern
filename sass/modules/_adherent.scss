@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    adherent
+\*------------------------------------*/
+/**
+ * adherent : Type de mise en page pour plusieurs visuels
+ */
+
+/**
+ * Mozaic
+ */
+.adherent {
+	@extend %block-blue;
+
+	// TITRE
+	.adherent__title {		
+		@include font-size(21px);
+		@include text-shadow(none); 
+		@include icons-sprite(sheet-white-l);
+
+		&:before {
+			border-bottom: 1px dotted white;
+			content: " ";
+			width: 100%;
+
+			position: absolute;
+			right: 32px;
+			top: 40px;
+		}
+
+		background-position: sprite-position($icons, sheet-white-r, 100%, 14px);  
+		color: white;
+		line-height: 50px;
+		margin: 0;
+		position: relative;
+		text-align: left;
+		top: -21px;
+	}
+}

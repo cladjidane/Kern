@@ -1,14 +1,19 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  mod_custom
+ * @subpackage  com_contact
  *
  * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
+
+JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
+JHtml::_('behavior.caption');
+
+echo JLayoutHelper::render('joomla.content.categories_default', $this);
+
+echo $this->loadTemplate('items');
 ?>
-<div class="grid__item five-twelfths block-<?php echo $moduleclass_sfx ?>">
-	<?php echo $module->content;?>
 </div>

@@ -1,14 +1,13 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  mod_custom
+ * @subpackage  com_contact
  *
  * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
-?>
-<div class="grid__item five-twelfths block-<?php echo $moduleclass_sfx ?>">
-	<?php echo $module->content;?>
-</div>
+
+$this->subtemplatename = 'items';
+echo JLayoutHelper::render('joomla.content.category_default', $this);

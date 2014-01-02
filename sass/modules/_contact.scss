@@ -9,6 +9,14 @@
 
 .contact {
 
+	h2 {
+		margin-top: 0; 
+	}
+
+	h3, .thumbnail, dt {
+		display: none;
+	}
+
 }
 
 .contact-txt {

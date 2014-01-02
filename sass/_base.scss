@@ -22,6 +22,7 @@ $color-e 						: #bba276; // brun
 $color-f 						: #edf7f2; // faux blanc
 $color-g 						: #0c8c9b; // turquoise
 $color-h 						: #edf7f2;
+$color-i 						: #cfef90; // Vert fond accueil
 
 /* Fonts */
 @include font-face("umbrage", font-files("Umbrage/umbrage.ttf")); 
@@ -60,14 +61,57 @@ $icons-spacing : 20px;
 $icons: sprite-map("icons/*.png", $spacing: $icons-spacing);
 
 /* Placeholders */
+/* Définition des blocks */
 %block-blue {	
-	color: $color-g; 
+	background: $color-g;
+	color: white; 
 	height: 330px;
 	padding: 24px 14px 14px 24px;
 	position: relative;
 	overflow: hidden;
 }
 
+%block-mauve {	
+	background: $color-d;
+	color: white; 
+	height: 330px;
+	padding: 24px 14px 14px 24px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Definition des écrans + le menu top */
+%header {
+	background:  $color-a;
+}
+
+%ecran-accueil {
+	background:  $color-i;
+}
+
+%ecran-produits {
+	@include single-box-shadow(darken($color-b, 5%), 0, 0, 150px, 100px, inset); 
+
+	background: $color-b;
+}
+
+%ecran-accueil {
+	@include single-box-shadow(darken($color-i, 5%), 0, 0, 150px, 100px, inset); 
+
+	background:  $color-i;
+}
+
+%ecran-groupement {
+	@include single-box-shadow(darken($color-c, 10%), 0, 0, 150px, 100px, inset); 
+
+	background:  $color-c;
+}
+
+%ecran-contact {
+	@include single-box-shadow(darken($color-e, 8%), 0, 0, 150px, 100px, inset); 
+
+	background:  $color-e;
+}
 
 /* debug */
 $debug-mode: false!default;

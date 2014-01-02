@@ -13,17 +13,17 @@
 	overflow: hidden;
 
 	// Couleur d'après les écrans
-	#produits & { 
+	#produits &, #contact & { 
 		color: white; 
 	}
 
 	// Pour home on ajoute un padding à droite
 	.home & {
-		padding-right: 20px;
+		//padding-right: 20px;
 	}
 
 	.aside-infos__title {
-		@include font-size(26px);
+		@include font-size(24px);
 		@include icons-sprite(sheet-white-l);
 		@include text-shadow($color-g 1px 1px 0); 
 
@@ -63,7 +63,7 @@
 			padding-left: 10px;
 			text-decoration: none;
 
-			#produits & {
+			#produits &, #contact & {
 				color: white;
 				background-position: sprite-position($icons, arrow-readmore-white, 0, 5px); 
 			}

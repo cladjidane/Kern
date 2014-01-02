@@ -24,7 +24,7 @@
     
     &,
     > a {
-      color: $color-g;
+      color: white;
       display:inline-block;
       *display:inline;
       text-decoration: none;
@@ -38,12 +38,14 @@
  * Menu principal
  */
 .nav-mainmenu {
-  @include font-size(30px);
+  @include font-size(25px);
 
   font-family: $hn-font-family;
+  margin-right: 50px;
 
   > li {
     @include icons-sprite(sep-menu);
+    @include text-shadow($color-a-dark 1px 1px 0); 
 
     background-position: sprite-position($icons, sep-menu, 0, 4px);
     padding-left: 20px;
@@ -53,7 +55,7 @@
     }
 
     a:hover {
-      color: transparentize($color-g, 0.5);
+      color: transparentize(black, 0.5);
     }
   }
 }
